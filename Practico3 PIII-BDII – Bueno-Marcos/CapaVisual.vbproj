@@ -73,11 +73,23 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.vb">
+    <Compile Include="AgregarCliente.Designer.vb">
+      <DependentUpon>AgregarCliente.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AgregarCliente.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.vb">
-      <DependentUpon>Form1.vb</DependentUpon>
+    <Compile Include="ContratarServicio.Designer.vb">
+      <DependentUpon>ContratarServicio.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ContratarServicio.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPpal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPpal.Designer.vb">
+      <DependentUpon>FormPpal.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -95,13 +107,31 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="NuevoServicio.Designer.vb">
+      <DependentUpon>NuevoServicio.vb</DependentUpon>
+    </Compile>
+    <Compile Include="NuevoServicio.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="AgregarCliente.resx">
+      <DependentUpon>AgregarCliente.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ContratarServicio.resx">
+      <DependentUpon>ContratarServicio.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPpal.resx">
+      <DependentUpon>FormPpal.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NuevoServicio.resx">
+      <DependentUpon>NuevoServicio.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
@@ -115,6 +145,30 @@
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backButton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backAgregar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\user-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\message-16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\date-from-16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\phone-16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\key-16.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
