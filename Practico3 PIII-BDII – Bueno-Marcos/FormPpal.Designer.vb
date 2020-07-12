@@ -23,7 +23,6 @@ Partial Class Gestor
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
-        Me.Agregar = New System.Windows.Forms.Button()
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.LoginToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.IniciarToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -33,8 +32,16 @@ Partial Class Gestor
         Me.ServiciosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ContratarToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.ContratarToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.MenuStrip2 = New System.Windows.Forms.MenuStrip()
+        Me.ListaDeClienteToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ListaDeServiciosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ServiciosContradadosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.buscar = New System.Windows.Forms.TextBox()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.MenuStrip1.SuspendLayout()
+        Me.MenuStrip2.SuspendLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'DataGridView1
@@ -44,20 +51,8 @@ Partial Class Gestor
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DataGridView1.Location = New System.Drawing.Point(30, 188)
         Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.Size = New System.Drawing.Size(516, 170)
+        Me.DataGridView1.Size = New System.Drawing.Size(747, 236)
         Me.DataGridView1.TabIndex = 0
-        '
-        'Agregar
-        '
-        Me.Agregar.BackgroundImage = Global.Practico3_PIII_BDII___Bueno_Marcos.My.Resources.Resources.backButton
-        Me.Agregar.Font = New System.Drawing.Font("Arial Rounded MT Bold", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Agregar.ForeColor = System.Drawing.Color.White
-        Me.Agregar.Location = New System.Drawing.Point(341, 376)
-        Me.Agregar.Name = "Agregar"
-        Me.Agregar.Size = New System.Drawing.Size(126, 43)
-        Me.Agregar.TabIndex = 1
-        Me.Agregar.Text = "Agregar"
-        Me.Agregar.UseVisualStyleBackColor = True
         '
         'MenuStrip1
         '
@@ -98,7 +93,7 @@ Partial Class Gestor
         'NuevoClienteToolStripMenuItem
         '
         Me.NuevoClienteToolStripMenuItem.Name = "NuevoClienteToolStripMenuItem"
-        Me.NuevoClienteToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.NuevoClienteToolStripMenuItem.Size = New System.Drawing.Size(149, 22)
         Me.NuevoClienteToolStripMenuItem.Text = "Nuevo Cliente"
         '
         'ServiciosToolStripMenuItem
@@ -111,14 +106,63 @@ Partial Class Gestor
         'ContratarToolStripMenuItem1
         '
         Me.ContratarToolStripMenuItem1.Name = "ContratarToolStripMenuItem1"
-        Me.ContratarToolStripMenuItem1.Size = New System.Drawing.Size(180, 22)
+        Me.ContratarToolStripMenuItem1.Size = New System.Drawing.Size(124, 22)
         Me.ContratarToolStripMenuItem1.Text = "Nuevo"
         '
         'ContratarToolStripMenuItem
         '
         Me.ContratarToolStripMenuItem.Name = "ContratarToolStripMenuItem"
-        Me.ContratarToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.ContratarToolStripMenuItem.Size = New System.Drawing.Size(124, 22)
         Me.ContratarToolStripMenuItem.Text = "Contratar"
+        '
+        'MenuStrip2
+        '
+        Me.MenuStrip2.Dock = System.Windows.Forms.DockStyle.None
+        Me.MenuStrip2.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ListaDeClienteToolStripMenuItem, Me.ListaDeServiciosToolStripMenuItem, Me.ServiciosContradadosToolStripMenuItem})
+        Me.MenuStrip2.Location = New System.Drawing.Point(30, 158)
+        Me.MenuStrip2.Name = "MenuStrip2"
+        Me.MenuStrip2.Size = New System.Drawing.Size(352, 24)
+        Me.MenuStrip2.TabIndex = 3
+        Me.MenuStrip2.Text = "MenuStrip2"
+        '
+        'ListaDeClienteToolStripMenuItem
+        '
+        Me.ListaDeClienteToolStripMenuItem.BackColor = System.Drawing.Color.Transparent
+        Me.ListaDeClienteToolStripMenuItem.Name = "ListaDeClienteToolStripMenuItem"
+        Me.ListaDeClienteToolStripMenuItem.Size = New System.Drawing.Size(100, 20)
+        Me.ListaDeClienteToolStripMenuItem.Text = "Lista De Cliente"
+        '
+        'ListaDeServiciosToolStripMenuItem
+        '
+        Me.ListaDeServiciosToolStripMenuItem.BackColor = System.Drawing.Color.Transparent
+        Me.ListaDeServiciosToolStripMenuItem.Name = "ListaDeServiciosToolStripMenuItem"
+        Me.ListaDeServiciosToolStripMenuItem.Size = New System.Drawing.Size(108, 20)
+        Me.ListaDeServiciosToolStripMenuItem.Text = "Lista de Servicios"
+        '
+        'ServiciosContradadosToolStripMenuItem
+        '
+        Me.ServiciosContradadosToolStripMenuItem.BackColor = System.Drawing.Color.Transparent
+        Me.ServiciosContradadosToolStripMenuItem.Name = "ServiciosContradadosToolStripMenuItem"
+        Me.ServiciosContradadosToolStripMenuItem.Size = New System.Drawing.Size(136, 20)
+        Me.ServiciosContradadosToolStripMenuItem.Text = "Servicios Contradados"
+        '
+        'buscar
+        '
+        Me.buscar.Location = New System.Drawing.Point(107, 69)
+        Me.buscar.Multiline = True
+        Me.buscar.Name = "buscar"
+        Me.buscar.Size = New System.Drawing.Size(621, 32)
+        Me.buscar.TabIndex = 4
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox1.BackgroundImage = Global.Practico3_PIII_BDII___Bueno_Marcos.My.Resources.Resources.search_12_16
+        Me.PictureBox1.Location = New System.Drawing.Point(73, 76)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(16, 16)
+        Me.PictureBox1.TabIndex = 33
+        Me.PictureBox1.TabStop = False
         '
         'Gestor
         '
@@ -126,9 +170,11 @@ Partial Class Gestor
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.Practico3_PIII_BDII___Bueno_Marcos.My.Resources.Resources.background
         Me.ClientSize = New System.Drawing.Size(800, 450)
-        Me.Controls.Add(Me.Agregar)
+        Me.Controls.Add(Me.PictureBox1)
+        Me.Controls.Add(Me.buscar)
         Me.Controls.Add(Me.DataGridView1)
         Me.Controls.Add(Me.MenuStrip1)
+        Me.Controls.Add(Me.MenuStrip2)
         Me.MainMenuStrip = Me.MenuStrip1
         Me.Name = "Gestor"
         Me.Text = "Gestor"
@@ -136,13 +182,15 @@ Partial Class Gestor
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.MenuStrip1.ResumeLayout(False)
         Me.MenuStrip1.PerformLayout()
+        Me.MenuStrip2.ResumeLayout(False)
+        Me.MenuStrip2.PerformLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
 
     Friend WithEvents DataGridView1 As DataGridView
-    Friend WithEvents Agregar As Button
     Friend WithEvents MenuStrip1 As MenuStrip
     Friend WithEvents LoginToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents IniciarToolStripMenuItem As ToolStripMenuItem
@@ -152,4 +200,10 @@ Partial Class Gestor
     Friend WithEvents NuevoClienteToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ContratarToolStripMenuItem1 As ToolStripMenuItem
     Friend WithEvents ContratarToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents MenuStrip2 As MenuStrip
+    Friend WithEvents ListaDeClienteToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ListaDeServiciosToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ServiciosContradadosToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents buscar As TextBox
+    Friend WithEvents PictureBox1 As PictureBox
 End Class

@@ -1,5 +1,5 @@
 ﻿Public Class Gestor
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Agregar.Click
+    Private Sub Button1_Click(sender As Object, e As EventArgs)
         AgregarCliente.Show()
     End Sub
 
