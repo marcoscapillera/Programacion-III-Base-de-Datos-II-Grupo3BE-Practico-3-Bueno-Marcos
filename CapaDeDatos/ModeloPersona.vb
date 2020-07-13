@@ -14,7 +14,7 @@ Public Class ModeloPersona
 
         c.conectar()
         c.Comando.CommandText = "INSERT INTO persona (id,nombre, apellido, mail, fechaHoraCreacion, activo ) 
-            VALUES ( " & Me.id & " ,'" & Me.nombre & "', " & Me.apellido & ", " & Me.mail & ", " & Me.fechaHoraCreacion & ", " & Me.activo & " ) 
+            VALUES ( " & Me.id & " ,'" & Me.nombre & "', '" & Me.apellido & "', '" & Me.mail & "', '" & Me.fechaHoraCreacion & "', " & Me.activo & " ) 
             ON DUPLICATE KEY UPDATE nombre ='" & Me.nombre & "',apellido ='" & Me.apellido & "',mail ='" & Me.mail & "',fechaHoraCreacion ='" & Me.fechaHoraCreacion & "', activo= " & Me.activo
         c.Comando.ExecuteNonQuery()
     End Sub

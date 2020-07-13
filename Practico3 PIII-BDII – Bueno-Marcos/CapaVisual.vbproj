@@ -179,5 +179,11 @@
   <ItemGroup>
     <None Include="My Project\backAgregar.png" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CapaLogica\CapaLogica.vbproj">
+      <Project>{7b8f7312-e377-4496-8baa-b9d67ae5e6e0}</Project>
+      <Name>CapaLogica</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

@@ -2,10 +2,10 @@
 
 Public Class ModeloConexion
 
-    Public DbDriver As String = "MySQL ODBC 8.0 ANSI Driver"
-    Public DbUser As String = "root"
-    Public DbPassword As String = "123"
-    Public DbPort As String = "3307"
+    Public DbDriver As String = "MySQL ODBC 5.3 ANSI Driver"
+    Public DbUser As String = "marcos"
+    Public DbPassword As String = "admin"
+    Public DbPort As String = "3306"
     Public DbName As String = "practico3"
     Public DbHost As String = "localhost"
 

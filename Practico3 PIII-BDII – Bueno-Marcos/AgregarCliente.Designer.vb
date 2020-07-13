@@ -33,7 +33,7 @@ Partial Class AgregarCliente
         Me.Guardar = New System.Windows.Forms.Button()
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
         Me.txtFechaAgregarCliente = New System.Windows.Forms.TextBox()
-        Me.Activo = New System.Windows.Forms.CheckBox()
+        Me.checkActivo = New System.Windows.Forms.CheckBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.PictureBox6 = New System.Windows.Forms.PictureBox()
@@ -161,17 +161,17 @@ Partial Class AgregarCliente
         Me.txtFechaAgregarCliente.Size = New System.Drawing.Size(347, 30)
         Me.txtFechaAgregarCliente.TabIndex = 16
         '
-        'Activo
+        'checkActivo
         '
-        Me.Activo.AutoSize = True
-        Me.Activo.BackColor = System.Drawing.Color.Transparent
-        Me.Activo.Font = New System.Drawing.Font("Arial Rounded MT Bold", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Activo.Location = New System.Drawing.Point(82, 590)
-        Me.Activo.Name = "Activo"
-        Me.Activo.Size = New System.Drawing.Size(78, 22)
-        Me.Activo.TabIndex = 31
-        Me.Activo.Text = "Activo"
-        Me.Activo.UseVisualStyleBackColor = False
+        Me.checkActivo.AutoSize = True
+        Me.checkActivo.BackColor = System.Drawing.Color.Transparent
+        Me.checkActivo.Font = New System.Drawing.Font("Arial Rounded MT Bold", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.checkActivo.Location = New System.Drawing.Point(82, 590)
+        Me.checkActivo.Name = "checkActivo"
+        Me.checkActivo.Size = New System.Drawing.Size(78, 22)
+        Me.checkActivo.TabIndex = 31
+        Me.checkActivo.Text = "Activo"
+        Me.checkActivo.UseVisualStyleBackColor = False
         '
         'PictureBox1
         '
@@ -237,7 +237,7 @@ Partial Class AgregarCliente
         Me.Controls.Add(Me.PictureBox6)
         Me.Controls.Add(Me.PictureBox2)
         Me.Controls.Add(Me.PictureBox1)
-        Me.Controls.Add(Me.Activo)
+        Me.Controls.Add(Me.checkActivo)
         Me.Controls.Add(Me.PictureBox3)
         Me.Controls.Add(Me.txtFechaAgregarCliente)
         Me.Controls.Add(Me.Guardar)
@@ -273,7 +273,7 @@ Partial Class AgregarCliente
     Friend WithEvents Guardar As Button
     Friend WithEvents PictureBox3 As PictureBox
     Friend WithEvents txtFechaAgregarCliente As TextBox
-    Friend WithEvents Activo As CheckBox
+    Friend WithEvents checkActivo As CheckBox
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents PictureBox2 As PictureBox
     Friend WithEvents PictureBox6 As PictureBox
