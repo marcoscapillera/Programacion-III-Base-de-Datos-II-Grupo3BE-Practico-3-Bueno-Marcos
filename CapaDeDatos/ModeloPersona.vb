@@ -14,8 +14,11 @@ Public Class ModeloPersona
 
     Public Sub GuardarPersona()
         Dim c As New ModeloConexion
+        Dim sqlText As String
 
         c.conectar()
+
+        If Me.id = 0 Then sqlText = "last_insert_id()" Else sqlText = Me.id
         Try
 
             c.Comando.CommandText = "SET AUTOCOMMIT = OFF;"
@@ -26,14 +29,16 @@ Public Class ModeloPersona
 
             c.Comando.CommandText = "INSERT INTO persona (id,nombre, apellido, mail, fechaHoraCreacion, activo ) 
             VALUES ( " & Me.id & " ,'" & Me.nombre & "', '" & Me.apellido & "', '" & Me.mail & "', '" & Me.fechaHoraCreacion & "', " & Me.activo & " )"
-
             c.Comando.ExecuteNonQuery()
 
-            'c.Comando.CommandText = "INSERT INTO personatelefono (id,telefono) VALUES (" & Me.id & " , " & Me.telefono1 & ")"
-            'c.Comando.ExecuteNonQuery()
 
-            'c.Comando.CommandText = "INSERT INTO personatelefono (id,telefono) VALUES (" & Me.id & " , " & Me.telefono2 & ")"
-            'c.Comando.ExecuteNonQuery()
+
+
+            c.Comando.CommandText = "INSERT INTO personatelefono (id,telefono) VALUES (" & sqlText & " , " & Me.telefono1 & ")"
+            c.Comando.ExecuteNonQuery()
+
+            c.Comando.CommandText = "INSERT INTO personatelefono (id,telefono) VALUES (" & sqlText & " , " & Me.telefono2 & ")"
+            c.Comando.ExecuteNonQuery()
 
             c.Comando.CommandText = "COMMIT;"
             c.Comando.ExecuteNonQuery()
