@@ -26,25 +26,20 @@ Partial Class AgregarCliente
         Me.txtIdAgregarCliente = New System.Windows.Forms.TextBox()
         Me.txtNombreAgregarCliente = New System.Windows.Forms.TextBox()
         Me.txtApellidoAgregarCliente = New System.Windows.Forms.TextBox()
-        Me.PictureBox4 = New System.Windows.Forms.PictureBox()
-        Me.listaTelefonosAgregarCliente = New System.Windows.Forms.TextBox()
-        Me.PictureBox5 = New System.Windows.Forms.PictureBox()
         Me.txtMailAgregarCliente = New System.Windows.Forms.TextBox()
-        Me.Guardar = New System.Windows.Forms.Button()
-        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
+        Me.btnGuardar = New System.Windows.Forms.Button()
         Me.txtFechaAgregarCliente = New System.Windows.Forms.TextBox()
         Me.checkActivo = New System.Windows.Forms.CheckBox()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox6 = New System.Windows.Forms.PictureBox()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.txtTelefonoAgregarCliente = New System.Windows.Forms.TextBox()
-        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.txtTelefono1AgregarCliente = New System.Windows.Forms.TextBox()
+        Me.lblIdServicio = New System.Windows.Forms.Label()
+        Me.lblNombreAgregarCliente = New System.Windows.Forms.Label()
+        Me.lblApellidosAgregarCliente = New System.Windows.Forms.Label()
+        Me.lblTelefono1AgregarCliente = New System.Windows.Forms.Label()
+        Me.lblMailAgregarCliente = New System.Windows.Forms.Label()
+        Me.txtTelefono2AgregarCliente = New System.Windows.Forms.TextBox()
+        Me.lblTelefono2AgregarCliente = New System.Windows.Forms.Label()
+        Me.lblFechaAgregarCliente = New System.Windows.Forms.Label()
+        Me.btnEnable = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'lblAgregarUsuario
@@ -62,103 +57,63 @@ Partial Class AgregarCliente
         '
         Me.txtIdAgregarCliente.Font = New System.Drawing.Font("Arial Rounded MT Bold", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtIdAgregarCliente.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.txtIdAgregarCliente.Location = New System.Drawing.Point(82, 124)
+        Me.txtIdAgregarCliente.Location = New System.Drawing.Point(130, 140)
         Me.txtIdAgregarCliente.Multiline = True
         Me.txtIdAgregarCliente.Name = "txtIdAgregarCliente"
-        Me.txtIdAgregarCliente.Size = New System.Drawing.Size(348, 30)
+        Me.txtIdAgregarCliente.Size = New System.Drawing.Size(311, 30)
         Me.txtIdAgregarCliente.TabIndex = 1
         '
         'txtNombreAgregarCliente
         '
         Me.txtNombreAgregarCliente.Font = New System.Drawing.Font("Arial Rounded MT Bold", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtNombreAgregarCliente.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.txtNombreAgregarCliente.Location = New System.Drawing.Point(83, 168)
+        Me.txtNombreAgregarCliente.Location = New System.Drawing.Point(131, 199)
         Me.txtNombreAgregarCliente.Multiline = True
         Me.txtNombreAgregarCliente.Name = "txtNombreAgregarCliente"
-        Me.txtNombreAgregarCliente.Size = New System.Drawing.Size(346, 30)
+        Me.txtNombreAgregarCliente.Size = New System.Drawing.Size(310, 30)
         Me.txtNombreAgregarCliente.TabIndex = 3
         '
         'txtApellidoAgregarCliente
         '
         Me.txtApellidoAgregarCliente.Font = New System.Drawing.Font("Arial Rounded MT Bold", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtApellidoAgregarCliente.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.txtApellidoAgregarCliente.Location = New System.Drawing.Point(82, 212)
+        Me.txtApellidoAgregarCliente.Location = New System.Drawing.Point(131, 256)
         Me.txtApellidoAgregarCliente.Multiline = True
         Me.txtApellidoAgregarCliente.Name = "txtApellidoAgregarCliente"
-        Me.txtApellidoAgregarCliente.Size = New System.Drawing.Size(347, 30)
+        Me.txtApellidoAgregarCliente.Size = New System.Drawing.Size(310, 30)
         Me.txtApellidoAgregarCliente.TabIndex = 5
-        '
-        'PictureBox4
-        '
-        Me.PictureBox4.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox4.BackgroundImage = Global.Practico3_PIII_BDII___Bueno_Marcos.My.Resources.Resources.message_16
-        Me.PictureBox4.Location = New System.Drawing.Point(50, 496)
-        Me.PictureBox4.Name = "PictureBox4"
-        Me.PictureBox4.Size = New System.Drawing.Size(16, 16)
-        Me.PictureBox4.TabIndex = 8
-        Me.PictureBox4.TabStop = False
-        '
-        'listaTelefonosAgregarCliente
-        '
-        Me.listaTelefonosAgregarCliente.Font = New System.Drawing.Font("Arial Rounded MT Bold", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.listaTelefonosAgregarCliente.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.listaTelefonosAgregarCliente.Location = New System.Drawing.Point(82, 306)
-        Me.listaTelefonosAgregarCliente.Multiline = True
-        Me.listaTelefonosAgregarCliente.Name = "listaTelefonosAgregarCliente"
-        Me.listaTelefonosAgregarCliente.Size = New System.Drawing.Size(175, 173)
-        Me.listaTelefonosAgregarCliente.TabIndex = 7
-        '
-        'PictureBox5
-        '
-        Me.PictureBox5.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox5.BackgroundImage = Global.Practico3_PIII_BDII___Bueno_Marcos.My.Resources.Resources.phone_16
-        Me.PictureBox5.Location = New System.Drawing.Point(50, 263)
-        Me.PictureBox5.Name = "PictureBox5"
-        Me.PictureBox5.Size = New System.Drawing.Size(16, 16)
-        Me.PictureBox5.TabIndex = 10
-        Me.PictureBox5.TabStop = False
         '
         'txtMailAgregarCliente
         '
         Me.txtMailAgregarCliente.Font = New System.Drawing.Font("Arial Rounded MT Bold", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtMailAgregarCliente.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.txtMailAgregarCliente.Location = New System.Drawing.Point(83, 496)
+        Me.txtMailAgregarCliente.Location = New System.Drawing.Point(129, 315)
         Me.txtMailAgregarCliente.Multiline = True
         Me.txtMailAgregarCliente.Name = "txtMailAgregarCliente"
-        Me.txtMailAgregarCliente.Size = New System.Drawing.Size(347, 30)
+        Me.txtMailAgregarCliente.Size = New System.Drawing.Size(311, 30)
         Me.txtMailAgregarCliente.TabIndex = 9
         '
-        'Guardar
+        'btnGuardar
         '
-        Me.Guardar.BackgroundImage = Global.Practico3_PIII_BDII___Bueno_Marcos.My.Resources.Resources.backButton
-        Me.Guardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Guardar.Font = New System.Drawing.Font("Arial Rounded MT Bold", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Guardar.ForeColor = System.Drawing.Color.White
-        Me.Guardar.Location = New System.Drawing.Point(340, 607)
-        Me.Guardar.Name = "Guardar"
-        Me.Guardar.Size = New System.Drawing.Size(89, 34)
-        Me.Guardar.TabIndex = 14
-        Me.Guardar.Text = "Guardar"
-        Me.Guardar.UseVisualStyleBackColor = True
-        '
-        'PictureBox3
-        '
-        Me.PictureBox3.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox3.BackgroundImage = Global.Practico3_PIII_BDII___Bueno_Marcos.My.Resources.Resources.date_from_16
-        Me.PictureBox3.Location = New System.Drawing.Point(50, 548)
-        Me.PictureBox3.Name = "PictureBox3"
-        Me.PictureBox3.Size = New System.Drawing.Size(16, 16)
-        Me.PictureBox3.TabIndex = 17
-        Me.PictureBox3.TabStop = False
+        Me.btnGuardar.BackgroundImage = Global.Practico3_PIII_BDII___Bueno_Marcos.My.Resources.Resources.backButton
+        Me.btnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnGuardar.Font = New System.Drawing.Font("Arial Rounded MT Bold", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnGuardar.ForeColor = System.Drawing.Color.White
+        Me.btnGuardar.Location = New System.Drawing.Point(352, 554)
+        Me.btnGuardar.Name = "btnGuardar"
+        Me.btnGuardar.Size = New System.Drawing.Size(89, 34)
+        Me.btnGuardar.TabIndex = 14
+        Me.btnGuardar.Text = "Guardar"
+        Me.btnGuardar.UseVisualStyleBackColor = True
         '
         'txtFechaAgregarCliente
         '
         Me.txtFechaAgregarCliente.Font = New System.Drawing.Font("Arial Rounded MT Bold", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtFechaAgregarCliente.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.txtFechaAgregarCliente.Location = New System.Drawing.Point(83, 543)
+        Me.txtFechaAgregarCliente.Location = New System.Drawing.Point(130, 482)
         Me.txtFechaAgregarCliente.Multiline = True
         Me.txtFechaAgregarCliente.Name = "txtFechaAgregarCliente"
-        Me.txtFechaAgregarCliente.Size = New System.Drawing.Size(347, 30)
+        Me.txtFechaAgregarCliente.Size = New System.Drawing.Size(311, 30)
         Me.txtFechaAgregarCliente.TabIndex = 16
         '
         'checkActivo
@@ -166,65 +121,122 @@ Partial Class AgregarCliente
         Me.checkActivo.AutoSize = True
         Me.checkActivo.BackColor = System.Drawing.Color.Transparent
         Me.checkActivo.Font = New System.Drawing.Font("Arial Rounded MT Bold", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.checkActivo.Location = New System.Drawing.Point(82, 590)
+        Me.checkActivo.Location = New System.Drawing.Point(130, 532)
         Me.checkActivo.Name = "checkActivo"
         Me.checkActivo.Size = New System.Drawing.Size(78, 22)
         Me.checkActivo.TabIndex = 31
         Me.checkActivo.Text = "Activo"
         Me.checkActivo.UseVisualStyleBackColor = False
         '
-        'PictureBox1
+        'txtTelefono1AgregarCliente
         '
-        Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox1.BackgroundImage = Global.Practico3_PIII_BDII___Bueno_Marcos.My.Resources.Resources.key_16
-        Me.PictureBox1.Location = New System.Drawing.Point(50, 133)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(17, 16)
-        Me.PictureBox1.TabIndex = 32
-        Me.PictureBox1.TabStop = False
+        Me.txtTelefono1AgregarCliente.Font = New System.Drawing.Font("Arial Rounded MT Bold", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtTelefono1AgregarCliente.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.txtTelefono1AgregarCliente.Location = New System.Drawing.Point(130, 371)
+        Me.txtTelefono1AgregarCliente.Multiline = True
+        Me.txtTelefono1AgregarCliente.Name = "txtTelefono1AgregarCliente"
+        Me.txtTelefono1AgregarCliente.Size = New System.Drawing.Size(311, 30)
+        Me.txtTelefono1AgregarCliente.TabIndex = 37
         '
-        'PictureBox2
+        'lblIdServicio
         '
-        Me.PictureBox2.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox2.BackgroundImage = Global.Practico3_PIII_BDII___Bueno_Marcos.My.Resources.Resources.user_321
-        Me.PictureBox2.Location = New System.Drawing.Point(50, 175)
-        Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(17, 16)
-        Me.PictureBox2.TabIndex = 33
-        Me.PictureBox2.TabStop = False
+        Me.lblIdServicio.AutoSize = True
+        Me.lblIdServicio.BackColor = System.Drawing.Color.Transparent
+        Me.lblIdServicio.Font = New System.Drawing.Font("Arial Rounded MT Bold", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblIdServicio.Location = New System.Drawing.Point(31, 140)
+        Me.lblIdServicio.Name = "lblIdServicio"
+        Me.lblIdServicio.Size = New System.Drawing.Size(23, 18)
+        Me.lblIdServicio.TabIndex = 38
+        Me.lblIdServicio.Text = "Id"
         '
-        'PictureBox6
+        'lblNombreAgregarCliente
         '
-        Me.PictureBox6.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox6.BackgroundImage = Global.Practico3_PIII_BDII___Bueno_Marcos.My.Resources.Resources.user_321
-        Me.PictureBox6.Location = New System.Drawing.Point(50, 219)
-        Me.PictureBox6.Name = "PictureBox6"
-        Me.PictureBox6.Size = New System.Drawing.Size(17, 16)
-        Me.PictureBox6.TabIndex = 34
-        Me.PictureBox6.TabStop = False
+        Me.lblNombreAgregarCliente.AutoSize = True
+        Me.lblNombreAgregarCliente.BackColor = System.Drawing.Color.Transparent
+        Me.lblNombreAgregarCliente.Font = New System.Drawing.Font("Arial Rounded MT Bold", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblNombreAgregarCliente.Location = New System.Drawing.Point(31, 202)
+        Me.lblNombreAgregarCliente.Name = "lblNombreAgregarCliente"
+        Me.lblNombreAgregarCliente.Size = New System.Drawing.Size(71, 18)
+        Me.lblNombreAgregarCliente.TabIndex = 39
+        Me.lblNombreAgregarCliente.Text = "Nombre"
         '
-        'Button1
+        'lblApellidosAgregarCliente
         '
-        Me.Button1.BackgroundImage = Global.Practico3_PIII_BDII___Bueno_Marcos.My.Resources.Resources.backButton
-        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button1.Font = New System.Drawing.Font("Arial Rounded MT Bold", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.ForeColor = System.Drawing.Color.White
-        Me.Button1.Location = New System.Drawing.Point(280, 306)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(149, 34)
-        Me.Button1.TabIndex = 35
-        Me.Button1.Text = "Añadir Telefonos "
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.lblApellidosAgregarCliente.AutoSize = True
+        Me.lblApellidosAgregarCliente.BackColor = System.Drawing.Color.Transparent
+        Me.lblApellidosAgregarCliente.Font = New System.Drawing.Font("Arial Rounded MT Bold", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblApellidosAgregarCliente.Location = New System.Drawing.Point(31, 268)
+        Me.lblApellidosAgregarCliente.Name = "lblApellidosAgregarCliente"
+        Me.lblApellidosAgregarCliente.Size = New System.Drawing.Size(81, 18)
+        Me.lblApellidosAgregarCliente.TabIndex = 40
+        Me.lblApellidosAgregarCliente.Text = "Apellidos"
         '
-        'txtTelefonoAgregarCliente
+        'lblTelefono1AgregarCliente
         '
-        Me.txtTelefonoAgregarCliente.Font = New System.Drawing.Font("Arial Rounded MT Bold", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtTelefonoAgregarCliente.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.txtTelefonoAgregarCliente.Location = New System.Drawing.Point(83, 258)
-        Me.txtTelefonoAgregarCliente.Multiline = True
-        Me.txtTelefonoAgregarCliente.Name = "txtTelefonoAgregarCliente"
-        Me.txtTelefonoAgregarCliente.Size = New System.Drawing.Size(347, 30)
-        Me.txtTelefonoAgregarCliente.TabIndex = 36
+        Me.lblTelefono1AgregarCliente.AutoSize = True
+        Me.lblTelefono1AgregarCliente.BackColor = System.Drawing.Color.Transparent
+        Me.lblTelefono1AgregarCliente.Font = New System.Drawing.Font("Arial Rounded MT Bold", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblTelefono1AgregarCliente.Location = New System.Drawing.Point(31, 375)
+        Me.lblTelefono1AgregarCliente.Name = "lblTelefono1AgregarCliente"
+        Me.lblTelefono1AgregarCliente.Size = New System.Drawing.Size(87, 18)
+        Me.lblTelefono1AgregarCliente.TabIndex = 41
+        Me.lblTelefono1AgregarCliente.Text = "Telefono1"
+        '
+        'lblMailAgregarCliente
+        '
+        Me.lblMailAgregarCliente.AutoSize = True
+        Me.lblMailAgregarCliente.BackColor = System.Drawing.Color.Transparent
+        Me.lblMailAgregarCliente.Font = New System.Drawing.Font("Arial Rounded MT Bold", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblMailAgregarCliente.Location = New System.Drawing.Point(31, 317)
+        Me.lblMailAgregarCliente.Name = "lblMailAgregarCliente"
+        Me.lblMailAgregarCliente.Size = New System.Drawing.Size(39, 18)
+        Me.lblMailAgregarCliente.TabIndex = 42
+        Me.lblMailAgregarCliente.Text = "Mail"
+        '
+        'txtTelefono2AgregarCliente
+        '
+        Me.txtTelefono2AgregarCliente.Font = New System.Drawing.Font("Arial Rounded MT Bold", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtTelefono2AgregarCliente.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.txtTelefono2AgregarCliente.Location = New System.Drawing.Point(129, 425)
+        Me.txtTelefono2AgregarCliente.Multiline = True
+        Me.txtTelefono2AgregarCliente.Name = "txtTelefono2AgregarCliente"
+        Me.txtTelefono2AgregarCliente.Size = New System.Drawing.Size(311, 30)
+        Me.txtTelefono2AgregarCliente.TabIndex = 43
+        '
+        'lblTelefono2AgregarCliente
+        '
+        Me.lblTelefono2AgregarCliente.AutoSize = True
+        Me.lblTelefono2AgregarCliente.BackColor = System.Drawing.Color.Transparent
+        Me.lblTelefono2AgregarCliente.Font = New System.Drawing.Font("Arial Rounded MT Bold", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblTelefono2AgregarCliente.Location = New System.Drawing.Point(31, 430)
+        Me.lblTelefono2AgregarCliente.Name = "lblTelefono2AgregarCliente"
+        Me.lblTelefono2AgregarCliente.Size = New System.Drawing.Size(87, 18)
+        Me.lblTelefono2AgregarCliente.TabIndex = 44
+        Me.lblTelefono2AgregarCliente.Text = "Telefono2"
+        '
+        'lblFechaAgregarCliente
+        '
+        Me.lblFechaAgregarCliente.AutoSize = True
+        Me.lblFechaAgregarCliente.BackColor = System.Drawing.Color.Transparent
+        Me.lblFechaAgregarCliente.Font = New System.Drawing.Font("Arial Rounded MT Bold", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblFechaAgregarCliente.Location = New System.Drawing.Point(31, 485)
+        Me.lblFechaAgregarCliente.Name = "lblFechaAgregarCliente"
+        Me.lblFechaAgregarCliente.Size = New System.Drawing.Size(58, 18)
+        Me.lblFechaAgregarCliente.TabIndex = 45
+        Me.lblFechaAgregarCliente.Text = "Fecha"
+        '
+        'btnEnable
+        '
+        Me.btnEnable.BackgroundImage = Global.Practico3_PIII_BDII___Bueno_Marcos.My.Resources.Resources.backButton
+        Me.btnEnable.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnEnable.Font = New System.Drawing.Font("Arial Rounded MT Bold", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnEnable.ForeColor = System.Drawing.Color.White
+        Me.btnEnable.Location = New System.Drawing.Point(257, 554)
+        Me.btnEnable.Name = "btnEnable"
+        Me.btnEnable.Size = New System.Drawing.Size(89, 34)
+        Me.btnEnable.TabIndex = 46
+        Me.btnEnable.Text = "Habilitar"
+        Me.btnEnable.UseVisualStyleBackColor = True
         '
         'AgregarCliente
         '
@@ -232,31 +244,26 @@ Partial Class AgregarCliente
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.Practico3_PIII_BDII___Bueno_Marcos.My.Resources.Resources.backAgregar1
         Me.ClientSize = New System.Drawing.Size(484, 661)
-        Me.Controls.Add(Me.txtTelefonoAgregarCliente)
-        Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.PictureBox6)
-        Me.Controls.Add(Me.PictureBox2)
-        Me.Controls.Add(Me.PictureBox1)
+        Me.Controls.Add(Me.btnEnable)
+        Me.Controls.Add(Me.lblFechaAgregarCliente)
+        Me.Controls.Add(Me.lblTelefono2AgregarCliente)
+        Me.Controls.Add(Me.txtTelefono2AgregarCliente)
+        Me.Controls.Add(Me.lblMailAgregarCliente)
+        Me.Controls.Add(Me.lblTelefono1AgregarCliente)
+        Me.Controls.Add(Me.lblApellidosAgregarCliente)
+        Me.Controls.Add(Me.lblNombreAgregarCliente)
+        Me.Controls.Add(Me.lblIdServicio)
+        Me.Controls.Add(Me.txtTelefono1AgregarCliente)
         Me.Controls.Add(Me.checkActivo)
-        Me.Controls.Add(Me.PictureBox3)
         Me.Controls.Add(Me.txtFechaAgregarCliente)
-        Me.Controls.Add(Me.Guardar)
-        Me.Controls.Add(Me.PictureBox5)
+        Me.Controls.Add(Me.btnGuardar)
         Me.Controls.Add(Me.txtMailAgregarCliente)
-        Me.Controls.Add(Me.PictureBox4)
-        Me.Controls.Add(Me.listaTelefonosAgregarCliente)
         Me.Controls.Add(Me.txtApellidoAgregarCliente)
         Me.Controls.Add(Me.txtNombreAgregarCliente)
         Me.Controls.Add(Me.txtIdAgregarCliente)
         Me.Controls.Add(Me.lblAgregarUsuario)
         Me.Name = "AgregarCliente"
         Me.Text = "Agregar Cliente"
-        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -266,17 +273,18 @@ Partial Class AgregarCliente
     Friend WithEvents txtIdAgregarCliente As TextBox
     Friend WithEvents txtNombreAgregarCliente As TextBox
     Friend WithEvents txtApellidoAgregarCliente As TextBox
-    Friend WithEvents PictureBox4 As PictureBox
-    Friend WithEvents listaTelefonosAgregarCliente As TextBox
-    Friend WithEvents PictureBox5 As PictureBox
     Friend WithEvents txtMailAgregarCliente As TextBox
-    Friend WithEvents Guardar As Button
-    Friend WithEvents PictureBox3 As PictureBox
+    Friend WithEvents btnGuardar As Button
     Friend WithEvents txtFechaAgregarCliente As TextBox
     Friend WithEvents checkActivo As CheckBox
-    Friend WithEvents PictureBox1 As PictureBox
-    Friend WithEvents PictureBox2 As PictureBox
-    Friend WithEvents PictureBox6 As PictureBox
-    Friend WithEvents Button1 As Button
-    Friend WithEvents txtTelefonoAgregarCliente As TextBox
+    Friend WithEvents txtTelefono1AgregarCliente As TextBox
+    Friend WithEvents lblIdServicio As Label
+    Friend WithEvents lblNombreAgregarCliente As Label
+    Friend WithEvents lblApellidosAgregarCliente As Label
+    Friend WithEvents lblTelefono1AgregarCliente As Label
+    Friend WithEvents lblMailAgregarCliente As Label
+    Friend WithEvents txtTelefono2AgregarCliente As TextBox
+    Friend WithEvents lblTelefono2AgregarCliente As Label
+    Friend WithEvents lblFechaAgregarCliente As Label
+    Friend WithEvents btnEnable As Button
 End Class
