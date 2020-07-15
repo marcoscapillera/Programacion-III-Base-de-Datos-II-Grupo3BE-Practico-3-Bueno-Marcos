@@ -209,5 +209,8 @@
   <ItemGroup>
     <None Include="My Project\backmodiifcarCliente.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\backgroundFormPpal.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

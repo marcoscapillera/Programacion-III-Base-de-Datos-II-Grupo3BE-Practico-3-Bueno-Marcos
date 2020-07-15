@@ -83,6 +83,35 @@ Public Class ModeloPersona
 
     End Sub
 
+    Public Sub EliminarPersona()
+        Dim c As New ModeloConexion
+        c.conectar()
+        Try
+
+            c.Comando.CommandText = "SET AUTOCOMMIT = OFF;"
+            c.Comando.ExecuteNonQuery()
+
+            c.Comando.CommandText = "START TRANSACTION;"
+            c.Comando.ExecuteNonQuery()
+
+            c.Comando.CommandText = "DELETE FROM personatelefono  WHERE id= " & Me.id
+            c.Comando.ExecuteNonQuery()
+
+            c.Comando.CommandText = "DELETE FROM persona  WHERE id= " & Me.id
+            c.Comando.ExecuteNonQuery()
+
+            c.Comando.CommandText = "COMMIT;"
+            c.Comando.ExecuteNonQuery()
+
+        Catch ex As Exception
+            MsgBox(ex.Message)
+            c.Comando.CommandText = "ROLLBACK;"
+            c.Comando.ExecuteNonQuery()
+
+        End Try
+
+    End Sub
+
     Public Function listarClientes()
         Dim c As New ModeloConexion
         c.conectar()

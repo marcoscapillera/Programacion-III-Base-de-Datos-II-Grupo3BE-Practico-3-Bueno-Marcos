@@ -51,7 +51,7 @@ Partial Class Gestor
         Me.DataGridView1.BackgroundColor = System.Drawing.Color.White
         Me.DataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(30, 188)
+        Me.DataGridView1.Location = New System.Drawing.Point(30, 205)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.Size = New System.Drawing.Size(747, 236)
         Me.DataGridView1.TabIndex = 0
@@ -95,19 +95,19 @@ Partial Class Gestor
         'NuevoClienteToolStripMenuItem
         '
         Me.NuevoClienteToolStripMenuItem.Name = "NuevoClienteToolStripMenuItem"
-        Me.NuevoClienteToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.NuevoClienteToolStripMenuItem.Size = New System.Drawing.Size(165, 22)
         Me.NuevoClienteToolStripMenuItem.Text = "Nuevo Cliente"
         '
         'ModificarClienteToolStripMenuItem
         '
         Me.ModificarClienteToolStripMenuItem.Name = "ModificarClienteToolStripMenuItem"
-        Me.ModificarClienteToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.ModificarClienteToolStripMenuItem.Size = New System.Drawing.Size(165, 22)
         Me.ModificarClienteToolStripMenuItem.Text = "Modificar Cliente"
         '
         'EliminarClienteToolStripMenuItem
         '
         Me.EliminarClienteToolStripMenuItem.Name = "EliminarClienteToolStripMenuItem"
-        Me.EliminarClienteToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.EliminarClienteToolStripMenuItem.Size = New System.Drawing.Size(165, 22)
         Me.EliminarClienteToolStripMenuItem.Text = "Eliminar Cliente"
         '
         'ServiciosToolStripMenuItem
@@ -182,7 +182,7 @@ Partial Class Gestor
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackgroundImage = Global.Practico3_PIII_BDII___Bueno_Marcos.My.Resources.Resources.background
+        Me.BackgroundImage = Global.Practico3_PIII_BDII___Bueno_Marcos.My.Resources.Resources.backgroundFormPpal
         Me.ClientSize = New System.Drawing.Size(1141, 661)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.buscar)

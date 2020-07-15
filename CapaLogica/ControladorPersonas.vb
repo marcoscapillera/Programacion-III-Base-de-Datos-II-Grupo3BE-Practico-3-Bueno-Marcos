@@ -30,6 +30,12 @@ Public Module ControladorPersonas
         p.ModificarPersona()
     End Sub
 
+    Public Sub EliminarPersona(Id As String)
+        'Guarda los datos de Persona 
+        Dim p As New ModeloPersona
+        p.id = Id
+        p.EliminarPersona()
+    End Sub
     Public Function ListarTodo()
         Dim p As New ModeloPersona
         Return p.listarClientes()
