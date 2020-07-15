@@ -14,4 +14,12 @@
     Private Sub ContratarToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ContratarToolStripMenuItem.Click
         ContratarServicio.Show()
     End Sub
+
+    Private Sub ModificarClienteToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ModificarClienteToolStripMenuItem.Click
+        UpdateCliente.Show()
+    End Sub
+
+    Private Sub EliminarClienteToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles EliminarClienteToolStripMenuItem.Click
+        EliminarCliente.Show()
+    End Sub
 End Class

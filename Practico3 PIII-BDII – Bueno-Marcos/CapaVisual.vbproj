@@ -85,6 +85,12 @@
     <Compile Include="ContratarServicio.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="EliminarCliente.Designer.vb">
+      <DependentUpon>EliminarCliente.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EliminarCliente.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="FormPpal.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -113,6 +119,12 @@
     <Compile Include="NuevoServicio.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="UpdateCliente.Designer.vb">
+      <DependentUpon>UpdateCliente.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateCliente.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="AgregarCliente.resx">
@@ -120,6 +132,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ContratarServicio.resx">
       <DependentUpon>ContratarServicio.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EliminarCliente.resx">
+      <DependentUpon>EliminarCliente.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormPpal.resx">
       <DependentUpon>FormPpal.vb</DependentUpon>
@@ -132,6 +147,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="NuevoServicio.resx">
       <DependentUpon>NuevoServicio.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateCliente.resx">
+      <DependentUpon>UpdateCliente.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
@@ -184,6 +202,12 @@
       <Project>{7b8f7312-e377-4496-8baa-b9d67ae5e6e0}</Project>
       <Name>CapaLogica</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\search-6-16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\backmodiifcarCliente.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

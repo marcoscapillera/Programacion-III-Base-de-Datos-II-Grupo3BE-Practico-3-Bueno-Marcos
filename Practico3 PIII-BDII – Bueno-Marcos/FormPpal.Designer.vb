@@ -29,6 +29,8 @@ Partial Class Gestor
         Me.CerrarToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.PersonasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.NuevoClienteToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ModificarClienteToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.EliminarClienteToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ServiciosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ContratarToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.ContratarToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -60,7 +62,7 @@ Partial Class Gestor
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.LoginToolStripMenuItem, Me.PersonasToolStripMenuItem, Me.ServiciosToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(800, 24)
+        Me.MenuStrip1.Size = New System.Drawing.Size(1141, 24)
         Me.MenuStrip1.TabIndex = 2
         Me.MenuStrip1.Text = "MenuStrip1"
         '
@@ -85,7 +87,7 @@ Partial Class Gestor
         '
         'PersonasToolStripMenuItem
         '
-        Me.PersonasToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.NuevoClienteToolStripMenuItem})
+        Me.PersonasToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.NuevoClienteToolStripMenuItem, Me.ModificarClienteToolStripMenuItem, Me.EliminarClienteToolStripMenuItem})
         Me.PersonasToolStripMenuItem.Name = "PersonasToolStripMenuItem"
         Me.PersonasToolStripMenuItem.Size = New System.Drawing.Size(61, 20)
         Me.PersonasToolStripMenuItem.Text = "Clientes"
@@ -93,8 +95,20 @@ Partial Class Gestor
         'NuevoClienteToolStripMenuItem
         '
         Me.NuevoClienteToolStripMenuItem.Name = "NuevoClienteToolStripMenuItem"
-        Me.NuevoClienteToolStripMenuItem.Size = New System.Drawing.Size(149, 22)
+        Me.NuevoClienteToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.NuevoClienteToolStripMenuItem.Text = "Nuevo Cliente"
+        '
+        'ModificarClienteToolStripMenuItem
+        '
+        Me.ModificarClienteToolStripMenuItem.Name = "ModificarClienteToolStripMenuItem"
+        Me.ModificarClienteToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.ModificarClienteToolStripMenuItem.Text = "Modificar Cliente"
+        '
+        'EliminarClienteToolStripMenuItem
+        '
+        Me.EliminarClienteToolStripMenuItem.Name = "EliminarClienteToolStripMenuItem"
+        Me.EliminarClienteToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.EliminarClienteToolStripMenuItem.Text = "Eliminar Cliente"
         '
         'ServiciosToolStripMenuItem
         '
@@ -169,7 +183,7 @@ Partial Class Gestor
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.Practico3_PIII_BDII___Bueno_Marcos.My.Resources.Resources.background
-        Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.ClientSize = New System.Drawing.Size(1141, 661)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.buscar)
         Me.Controls.Add(Me.DataGridView1)
@@ -206,4 +220,6 @@ Partial Class Gestor
     Friend WithEvents ServiciosContradadosToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents buscar As TextBox
     Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents ModificarClienteToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents EliminarClienteToolStripMenuItem As ToolStripMenuItem
 End Class

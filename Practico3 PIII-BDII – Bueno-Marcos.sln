@@ -9,8 +9,6 @@ Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "CapaDeDatos", "CapaDeDatos\
 EndProject
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "CapaLogica", "CapaLogica\CapaLogica.vbproj", "{7B8F7312-E377-4496-8BAA-B9D67AE5E6E0}"
 EndProject
-Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "ModificarCliente", "ModificarCliente\ModificarCliente.vbproj", "{C8130AB5-AD6B-4C23-8964-9CCB21377FD5}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -29,10 +27,6 @@ Global
 		{7B8F7312-E377-4496-8BAA-B9D67AE5E6E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7B8F7312-E377-4496-8BAA-B9D67AE5E6E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7B8F7312-E377-4496-8BAA-B9D67AE5E6E0}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C8130AB5-AD6B-4C23-8964-9CCB21377FD5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C8130AB5-AD6B-4C23-8964-9CCB21377FD5}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C8130AB5-AD6B-4C23-8964-9CCB21377FD5}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C8130AB5-AD6B-4C23-8964-9CCB21377FD5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
