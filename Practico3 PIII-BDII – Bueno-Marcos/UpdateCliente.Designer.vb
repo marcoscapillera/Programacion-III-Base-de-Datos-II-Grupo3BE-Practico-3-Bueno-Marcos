@@ -326,7 +326,7 @@ Partial Class UpdateCliente
         Me.Controls.Add(Me.txtIdModificarCliente)
         Me.Controls.Add(Me.lblModificarUsuario)
         Me.Name = "UpdateCliente"
-        Me.Text = "f"
+        Me.Text = "Modificar Cliente"
         CType(Me.DataGridCliente, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)

@@ -25,7 +25,6 @@ Partial Class NuevoServicio
         Me.lblAgregarUsuario = New System.Windows.Forms.Label()
         Me.lblIdServicio = New System.Windows.Forms.Label()
         Me.txtFechaNuevoServicio = New System.Windows.Forms.TextBox()
-        Me.txtTipoNuevoServicio = New System.Windows.Forms.TextBox()
         Me.txtCostoMensualNuevoServicio = New System.Windows.Forms.TextBox()
         Me.txtNombreNuevoServicio = New System.Windows.Forms.TextBox()
         Me.txtIdNuevoServicio = New System.Windows.Forms.TextBox()
@@ -34,7 +33,9 @@ Partial Class NuevoServicio
         Me.lblTipo = New System.Windows.Forms.Label()
         Me.lblFechaServicio = New System.Windows.Forms.Label()
         Me.checkActivoNuevoServicio = New System.Windows.Forms.CheckBox()
-        Me.GuardarServicio = New System.Windows.Forms.Button()
+        Me.btnEnable = New System.Windows.Forms.Button()
+        Me.btnGuardar = New System.Windows.Forms.Button()
+        Me.cmbTipos = New System.Windows.Forms.ComboBox()
         Me.SuspendLayout()
         '
         'lblAgregarUsuario
@@ -66,18 +67,8 @@ Partial Class NuevoServicio
         Me.txtFechaNuevoServicio.Location = New System.Drawing.Point(95, 331)
         Me.txtFechaNuevoServicio.Multiline = True
         Me.txtFechaNuevoServicio.Name = "txtFechaNuevoServicio"
-        Me.txtFechaNuevoServicio.Size = New System.Drawing.Size(347, 30)
+        Me.txtFechaNuevoServicio.Size = New System.Drawing.Size(347, 26)
         Me.txtFechaNuevoServicio.TabIndex = 23
-        '
-        'txtTipoNuevoServicio
-        '
-        Me.txtTipoNuevoServicio.Font = New System.Drawing.Font("Arial Rounded MT Bold", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtTipoNuevoServicio.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.txtTipoNuevoServicio.Location = New System.Drawing.Point(95, 282)
-        Me.txtTipoNuevoServicio.Multiline = True
-        Me.txtTipoNuevoServicio.Name = "txtTipoNuevoServicio"
-        Me.txtTipoNuevoServicio.Size = New System.Drawing.Size(347, 30)
-        Me.txtTipoNuevoServicio.TabIndex = 21
         '
         'txtCostoMensualNuevoServicio
         '
@@ -86,7 +77,7 @@ Partial Class NuevoServicio
         Me.txtCostoMensualNuevoServicio.Location = New System.Drawing.Point(164, 233)
         Me.txtCostoMensualNuevoServicio.Multiline = True
         Me.txtCostoMensualNuevoServicio.Name = "txtCostoMensualNuevoServicio"
-        Me.txtCostoMensualNuevoServicio.Size = New System.Drawing.Size(278, 30)
+        Me.txtCostoMensualNuevoServicio.Size = New System.Drawing.Size(278, 26)
         Me.txtCostoMensualNuevoServicio.TabIndex = 20
         '
         'txtNombreNuevoServicio
@@ -96,7 +87,7 @@ Partial Class NuevoServicio
         Me.txtNombreNuevoServicio.Location = New System.Drawing.Point(164, 177)
         Me.txtNombreNuevoServicio.Multiline = True
         Me.txtNombreNuevoServicio.Name = "txtNombreNuevoServicio"
-        Me.txtNombreNuevoServicio.Size = New System.Drawing.Size(278, 30)
+        Me.txtNombreNuevoServicio.Size = New System.Drawing.Size(278, 26)
         Me.txtNombreNuevoServicio.TabIndex = 18
         '
         'txtIdNuevoServicio
@@ -106,7 +97,7 @@ Partial Class NuevoServicio
         Me.txtIdNuevoServicio.Location = New System.Drawing.Point(164, 126)
         Me.txtIdNuevoServicio.Multiline = True
         Me.txtIdNuevoServicio.Name = "txtIdNuevoServicio"
-        Me.txtIdNuevoServicio.Size = New System.Drawing.Size(278, 30)
+        Me.txtIdNuevoServicio.Size = New System.Drawing.Size(278, 26)
         Me.txtIdNuevoServicio.TabIndex = 17
         '
         'lblNombreServicio
@@ -165,18 +156,42 @@ Partial Class NuevoServicio
         Me.checkActivoNuevoServicio.Text = "Activo"
         Me.checkActivoNuevoServicio.UseVisualStyleBackColor = False
         '
-        'GuardarServicio
+        'btnEnable
         '
-        Me.GuardarServicio.BackgroundImage = Global.Practico3_PIII_BDII___Bueno_Marcos.My.Resources.Resources.backButton
-        Me.GuardarServicio.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.GuardarServicio.Font = New System.Drawing.Font("Arial Rounded MT Bold", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GuardarServicio.ForeColor = System.Drawing.Color.White
-        Me.GuardarServicio.Location = New System.Drawing.Point(353, 415)
-        Me.GuardarServicio.Name = "GuardarServicio"
-        Me.GuardarServicio.Size = New System.Drawing.Size(89, 34)
-        Me.GuardarServicio.TabIndex = 31
-        Me.GuardarServicio.Text = "Guardar"
-        Me.GuardarServicio.UseVisualStyleBackColor = True
+        Me.btnEnable.BackColor = System.Drawing.Color.Transparent
+        Me.btnEnable.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnEnable.Font = New System.Drawing.Font("Arial Rounded MT Bold", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnEnable.ForeColor = System.Drawing.Color.Indigo
+        Me.btnEnable.Location = New System.Drawing.Point(258, 403)
+        Me.btnEnable.Name = "btnEnable"
+        Me.btnEnable.Size = New System.Drawing.Size(89, 34)
+        Me.btnEnable.TabIndex = 66
+        Me.btnEnable.Text = "Habilitar"
+        Me.btnEnable.UseVisualStyleBackColor = False
+        '
+        'btnGuardar
+        '
+        Me.btnGuardar.BackColor = System.Drawing.Color.Transparent
+        Me.btnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnGuardar.Font = New System.Drawing.Font("Arial Rounded MT Bold", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnGuardar.ForeColor = System.Drawing.Color.MediumSeaGreen
+        Me.btnGuardar.Location = New System.Drawing.Point(353, 403)
+        Me.btnGuardar.Name = "btnGuardar"
+        Me.btnGuardar.Size = New System.Drawing.Size(89, 34)
+        Me.btnGuardar.TabIndex = 65
+        Me.btnGuardar.Text = "Guardar"
+        Me.btnGuardar.UseVisualStyleBackColor = False
+        '
+        'cmbTipos
+        '
+        Me.cmbTipos.Font = New System.Drawing.Font("Arial Rounded MT Bold", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cmbTipos.FormattingEnabled = True
+        Me.cmbTipos.Items.AddRange(New Object() {"Limpieza", "Mantenimiento", "Electricidad", "Telecomunicaciones", "Informática"})
+        Me.cmbTipos.Location = New System.Drawing.Point(95, 286)
+        Me.cmbTipos.Name = "cmbTipos"
+        Me.cmbTipos.Size = New System.Drawing.Size(347, 26)
+        Me.cmbTipos.TabIndex = 67
+        Me.cmbTipos.Text = "Seleccione un tipo"
         '
         'NuevoServicio
         '
@@ -184,7 +199,9 @@ Partial Class NuevoServicio
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.Practico3_PIII_BDII___Bueno_Marcos.My.Resources.Resources.backAgregar
         Me.ClientSize = New System.Drawing.Size(484, 461)
-        Me.Controls.Add(Me.GuardarServicio)
+        Me.Controls.Add(Me.cmbTipos)
+        Me.Controls.Add(Me.btnEnable)
+        Me.Controls.Add(Me.btnGuardar)
         Me.Controls.Add(Me.checkActivoNuevoServicio)
         Me.Controls.Add(Me.lblFechaServicio)
         Me.Controls.Add(Me.lblTipo)
@@ -192,7 +209,6 @@ Partial Class NuevoServicio
         Me.Controls.Add(Me.lblNombreServicio)
         Me.Controls.Add(Me.lblIdServicio)
         Me.Controls.Add(Me.txtFechaNuevoServicio)
-        Me.Controls.Add(Me.txtTipoNuevoServicio)
         Me.Controls.Add(Me.txtCostoMensualNuevoServicio)
         Me.Controls.Add(Me.txtNombreNuevoServicio)
         Me.Controls.Add(Me.txtIdNuevoServicio)
@@ -207,7 +223,6 @@ Partial Class NuevoServicio
     Friend WithEvents lblAgregarUsuario As Label
     Friend WithEvents lblIdServicio As Label
     Friend WithEvents txtFechaNuevoServicio As TextBox
-    Friend WithEvents txtTipoNuevoServicio As TextBox
     Friend WithEvents txtCostoMensualNuevoServicio As TextBox
     Friend WithEvents txtNombreNuevoServicio As TextBox
     Friend WithEvents txtIdNuevoServicio As TextBox
@@ -216,5 +231,7 @@ Partial Class NuevoServicio
     Friend WithEvents lblTipo As Label
     Friend WithEvents lblFechaServicio As Label
     Friend WithEvents checkActivoNuevoServicio As CheckBox
-    Friend WithEvents GuardarServicio As Button
+    Friend WithEvents btnEnable As Button
+    Friend WithEvents btnGuardar As Button
+    Friend WithEvents cmbTipos As ComboBox
 End Class

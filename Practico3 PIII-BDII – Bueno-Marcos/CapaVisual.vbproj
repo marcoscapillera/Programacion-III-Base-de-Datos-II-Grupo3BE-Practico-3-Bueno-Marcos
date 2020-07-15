@@ -91,11 +91,23 @@
     <Compile Include="EliminarCliente.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="EliminarServicio.Designer.vb">
+      <DependentUpon>EliminarServicio.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EliminarServicio.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="FormPpal.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormPpal.Designer.vb">
       <DependentUpon>FormPpal.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModificarServicio.Designer.vb">
+      <DependentUpon>ModificarServicio.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ModificarServicio.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -136,8 +148,14 @@
     <EmbeddedResource Include="EliminarCliente.resx">
       <DependentUpon>EliminarCliente.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="EliminarServicio.resx">
+      <DependentUpon>EliminarServicio.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormPpal.resx">
       <DependentUpon>FormPpal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModificarServicio.resx">
+      <DependentUpon>ModificarServicio.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
