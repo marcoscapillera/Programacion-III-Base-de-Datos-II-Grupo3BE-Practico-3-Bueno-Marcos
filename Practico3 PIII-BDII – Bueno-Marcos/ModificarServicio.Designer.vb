@@ -36,10 +36,8 @@ Partial Class ModificarServicio
         Me.txtIdModificarServicio = New System.Windows.Forms.TextBox()
         Me.lblModificarUsuario = New System.Windows.Forms.Label()
         Me.cmbTiposModificarServicio = New System.Windows.Forms.ComboBox()
-        Me.lblFechaServicio = New System.Windows.Forms.Label()
         Me.lblTipo = New System.Windows.Forms.Label()
         Me.lblCostoMensual = New System.Windows.Forms.Label()
-        Me.txtFechaModificarServicio = New System.Windows.Forms.TextBox()
         Me.txtCostoMensualModificarServicio = New System.Windows.Forms.TextBox()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DataGridCliente, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -102,9 +100,9 @@ Partial Class ModificarServicio
         Me.btnEnable.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnEnable.Font = New System.Drawing.Font("Arial Rounded MT Bold", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnEnable.ForeColor = System.Drawing.Color.Indigo
-        Me.btnEnable.Location = New System.Drawing.Point(258, 492)
+        Me.btnEnable.Location = New System.Drawing.Point(88, 429)
         Me.btnEnable.Name = "btnEnable"
-        Me.btnEnable.Size = New System.Drawing.Size(89, 34)
+        Me.btnEnable.Size = New System.Drawing.Size(150, 34)
         Me.btnEnable.TabIndex = 87
         Me.btnEnable.Text = "Limpiar"
         Me.btnEnable.UseVisualStyleBackColor = False
@@ -136,7 +134,7 @@ Partial Class ModificarServicio
         Me.checkActivo.AutoSize = True
         Me.checkActivo.BackColor = System.Drawing.Color.Transparent
         Me.checkActivo.Font = New System.Drawing.Font("Arial Rounded MT Bold", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.checkActivo.Location = New System.Drawing.Point(99, 439)
+        Me.checkActivo.Location = New System.Drawing.Point(99, 387)
         Me.checkActivo.Name = "checkActivo"
         Me.checkActivo.Size = New System.Drawing.Size(78, 22)
         Me.checkActivo.TabIndex = 77
@@ -149,9 +147,9 @@ Partial Class ModificarServicio
         Me.btnModificar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnModificar.Font = New System.Drawing.Font("Arial Rounded MT Bold", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnModificar.ForeColor = System.Drawing.Color.MediumSeaGreen
-        Me.btnModificar.Location = New System.Drawing.Point(353, 492)
+        Me.btnModificar.Location = New System.Drawing.Point(276, 429)
         Me.btnModificar.Name = "btnModificar"
-        Me.btnModificar.Size = New System.Drawing.Size(89, 34)
+        Me.btnModificar.Size = New System.Drawing.Size(170, 34)
         Me.btnModificar.TabIndex = 75
         Me.btnModificar.Text = "Modificar"
         Me.btnModificar.UseVisualStyleBackColor = False
@@ -198,17 +196,6 @@ Partial Class ModificarServicio
         Me.cmbTiposModificarServicio.TabIndex = 98
         Me.cmbTiposModificarServicio.Text = "Seleccione un tipo"
         '
-        'lblFechaServicio
-        '
-        Me.lblFechaServicio.AutoSize = True
-        Me.lblFechaServicio.BackColor = System.Drawing.Color.Transparent
-        Me.lblFechaServicio.Font = New System.Drawing.Font("Arial Rounded MT Bold", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblFechaServicio.Location = New System.Drawing.Point(37, 388)
-        Me.lblFechaServicio.Name = "lblFechaServicio"
-        Me.lblFechaServicio.Size = New System.Drawing.Size(58, 18)
-        Me.lblFechaServicio.TabIndex = 97
-        Me.lblFechaServicio.Text = "Fecha"
-        '
         'lblTipo
         '
         Me.lblTipo.AutoSize = True
@@ -231,16 +218,6 @@ Partial Class ModificarServicio
         Me.lblCostoMensual.TabIndex = 95
         Me.lblCostoMensual.Text = "Costo Mensual"
         '
-        'txtFechaModificarServicio
-        '
-        Me.txtFechaModificarServicio.Font = New System.Drawing.Font("Arial Rounded MT Bold", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtFechaModificarServicio.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.txtFechaModificarServicio.Location = New System.Drawing.Point(99, 385)
-        Me.txtFechaModificarServicio.Multiline = True
-        Me.txtFechaModificarServicio.Name = "txtFechaModificarServicio"
-        Me.txtFechaModificarServicio.Size = New System.Drawing.Size(347, 26)
-        Me.txtFechaModificarServicio.TabIndex = 94
-        '
         'txtCostoMensualModificarServicio
         '
         Me.txtCostoMensualModificarServicio.Font = New System.Drawing.Font("Arial Rounded MT Bold", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -258,10 +235,8 @@ Partial Class ModificarServicio
         Me.BackgroundImage = Global.Practico3_PIII_BDII___Bueno_Marcos.My.Resources.Resources.backmodiifcarCliente
         Me.ClientSize = New System.Drawing.Size(1141, 661)
         Me.Controls.Add(Me.cmbTiposModificarServicio)
-        Me.Controls.Add(Me.lblFechaServicio)
         Me.Controls.Add(Me.lblTipo)
         Me.Controls.Add(Me.lblCostoMensual)
-        Me.Controls.Add(Me.txtFechaModificarServicio)
         Me.Controls.Add(Me.txtCostoMensualModificarServicio)
         Me.Controls.Add(Me.lblTablaDatos)
         Me.Controls.Add(Me.btnListarServicios)
@@ -299,9 +274,7 @@ Partial Class ModificarServicio
     Friend WithEvents txtIdModificarServicio As TextBox
     Friend WithEvents lblModificarUsuario As Label
     Friend WithEvents cmbTiposModificarServicio As ComboBox
-    Friend WithEvents lblFechaServicio As Label
     Friend WithEvents lblTipo As Label
     Friend WithEvents lblCostoMensual As Label
-    Friend WithEvents txtFechaModificarServicio As TextBox
     Friend WithEvents txtCostoMensualModificarServicio As TextBox
 End Class

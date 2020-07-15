@@ -9,7 +9,6 @@ Public Class ModeloPersona
     Public telefono1 As String
     Public telefono2 As String
     Public mail As String
-    Public fechaHoraCreacion As String
     Public activo As Boolean
 
 
@@ -28,8 +27,8 @@ Public Class ModeloPersona
             c.Comando.CommandText = "START TRANSACTION;"
             c.Comando.ExecuteNonQuery()
 
-            c.Comando.CommandText = "INSERT INTO persona (id,nombre, apellido, mail, fechaHoraCreacion, activo ) 
-            VALUES ( " & Me.id & " ,'" & Me.nombre & "', '" & Me.apellido & "', '" & Me.mail & "', '" & Me.fechaHoraCreacion & "', " & Me.activo & " )"
+            c.Comando.CommandText = "INSERT INTO persona (id,nombre, apellido, mail, activo ) 
+            VALUES ( " & Me.id & " ,'" & Me.nombre & "', '" & Me.apellido & "', '" & Me.mail & "', " & Me.activo & " )"
             c.Comando.ExecuteNonQuery()
 
             c.Comando.CommandText = "INSERT INTO personatelefono (id,telefono) VALUES (" & sqlText & " , " & Me.telefono1 & ")"
@@ -61,7 +60,7 @@ Public Class ModeloPersona
             c.Comando.CommandText = "START TRANSACTION;"
             c.Comando.ExecuteNonQuery()
 
-            c.Comando.CommandText = "UPDATE  persona  SET nombre ='" & Me.nombre & "', apellido ='" & Me.apellido & "', mail='" & Me.mail & "',  fechaHoraCreacion='" & Me.fechaHoraCreacion & "', activo= " & Me.activo & "  WHERE id= " & Me.id
+            c.Comando.CommandText = "UPDATE  persona  SET nombre ='" & Me.nombre & "', apellido ='" & Me.apellido & "', mail='" & Me.mail & "', activo= " & Me.activo & "  WHERE id= " & Me.id
             c.Comando.ExecuteNonQuery()
 
 

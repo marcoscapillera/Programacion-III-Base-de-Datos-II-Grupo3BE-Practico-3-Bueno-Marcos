@@ -10,7 +10,7 @@ Public Class UpdateCliente
         If habilitaModificar() = True Then
             Try
                 ControladorPersonas.ModificarPersona(txtIdModificarCliente.Text, txtNombreModificarCliente.Text, txtApellidoModificarCliente.Text,
-                                                    txtMailModificarCliente.Text, txtFechaModificarCliente.Text, checkActivo.CheckState,
+                                                    txtMailModificarCliente.Text, checkActivo.CheckState,
                                                     txtTelefono1ModificarCliente.Text, txtTelefono2ModificarCliente.Text)
                 MsgBox("Datos de cliente guardado correctamente")
                 limpiarCajas()

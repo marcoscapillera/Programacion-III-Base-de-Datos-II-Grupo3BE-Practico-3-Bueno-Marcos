@@ -7,7 +7,7 @@ Public Class AgregarCliente
         If habilitaGuardar() = True Then
             Try
                 ControladorPersonas.GuardarPersona(txtIdAgregarCliente.Text, txtNombreAgregarCliente.Text, txtApellidoAgregarCliente.Text,
-                                                    txtMailAgregarCliente.Text, txtFechaAgregarCliente.Text, checkActivo.CheckState,
+                                                    txtMailAgregarCliente.Text, checkActivo.CheckState,
                                                     txtTelefono1AgregarCliente.Text, txtTelefono2AgregarCliente.Text)
                 MsgBox("Datos de cliente guardado correctamente")
                 limpiarCajas()
@@ -22,7 +22,7 @@ Public Class AgregarCliente
 
     Public Function habilitaGuardar() As Boolean
         If txtIdAgregarCliente.Text <> "" And txtNombreAgregarCliente.Text <> "" And txtApellidoAgregarCliente.Text <> "" And
-           txtMailAgregarCliente.Text <> "" And txtFechaAgregarCliente.Text <> "" And txtTelefono1AgregarCliente.Text <> "" And
+           txtMailAgregarCliente.Text <> "" And txtTelefono1AgregarCliente.Text <> "" And
            txtTelefono2AgregarCliente.Text <> "" Then
             Return True
         Else
@@ -35,7 +35,7 @@ Public Class AgregarCliente
         txtNombreAgregarCliente.Text = ""
         txtApellidoAgregarCliente.Text = ""
         txtMailAgregarCliente.Text = ""
-        txtFechaAgregarCliente.Text = ""
+        'txtFechaAgregarCliente.Text = ""
         checkActivo.CheckState = CheckState.Checked
         txtTelefono1AgregarCliente.Text = ""
         txtTelefono2AgregarCliente.Text = ""

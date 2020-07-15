@@ -14,14 +14,13 @@ Public Module ControladorServicios
         s.GuardarServicio()
     End Sub
 
-    Public Sub ModificarServicios(Id As String, nombre As String, costo As String, tipo As String, fechaHoraCreacion As String, activo As Boolean)
+    Public Sub ModificarServicios(Id As String, nombre As String, costo As String, tipo As String, activo As Boolean)
         'Guarda los datos de Servicio
         Dim s As New ModeloServicios
         s.id = Id
         s.nombre = nombre
         s.costo = costo
         s.tipo = tipo
-        s.fechaHoraCreacion = fechaHoraCreacion
         s.activo = activo
         s.ModificarServicio()
     End Sub

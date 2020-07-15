@@ -15,7 +15,6 @@ Public Class ModificarServicio
         txtNombreModificarServicio.Text = DataGridCliente.Item(1, e.RowIndex).Value
         txtCostoMensualModificarServicio.Text = DataGridCliente.Item(2, e.RowIndex).Value
         cmbTiposModificarServicio.Text = DataGridCliente.Item(3, e.RowIndex).Value
-        txtFechaModificarServicio.Text = DataGridCliente.Item(4, e.RowIndex).Value
         checkActivo.CheckState = DataGridCliente.Item(5, e.RowIndex).Value
     End Sub
 
@@ -30,7 +29,6 @@ Public Class ModificarServicio
                                                     txtNombreModificarServicio.Text,
                                                     txtCostoMensualModificarServicio.Text,
                                                     cmbTiposModificarServicio.Text,
-                                                    txtFechaModificarServicio.Text,
                                                     checkActivo.CheckState)
             MsgBox("Datos de servicios actualizado correctamente")
             limpiarCajas()
@@ -45,7 +43,6 @@ Public Class ModificarServicio
         txtNombreModificarServicio.Text = ""
         txtCostoMensualModificarServicio.Text = ""
         cmbTiposModificarServicio.Text = ""
-        txtFechaModificarServicio.Text = ""
         checkActivo.CheckState = CheckState.Unchecked
     End Sub
 End Class

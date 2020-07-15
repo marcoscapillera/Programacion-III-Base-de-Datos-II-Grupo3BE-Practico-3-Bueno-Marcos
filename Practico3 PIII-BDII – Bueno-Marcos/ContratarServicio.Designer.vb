@@ -23,12 +23,10 @@ Partial Class ContratarServicio
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.lblAgregarUsuario = New System.Windows.Forms.Label()
-        Me.lblFecha = New System.Windows.Forms.Label()
         Me.lblTipoServicio = New System.Windows.Forms.Label()
         Me.lblCostoMensual = New System.Windows.Forms.Label()
         Me.lblNombreContrado = New System.Windows.Forms.Label()
         Me.lblIdSContratado = New System.Windows.Forms.Label()
-        Me.txtFechaContratarServicio = New System.Windows.Forms.TextBox()
         Me.txtTipoContratarServicio = New System.Windows.Forms.TextBox()
         Me.txtCostoMensual = New System.Windows.Forms.TextBox()
         Me.txtNombreContratarSrvicio = New System.Windows.Forms.TextBox()
@@ -46,17 +44,6 @@ Partial Class ContratarServicio
         Me.lblAgregarUsuario.Size = New System.Drawing.Size(177, 22)
         Me.lblAgregarUsuario.TabIndex = 2
         Me.lblAgregarUsuario.Text = "Contratar Servicio"
-        '
-        'lblFecha
-        '
-        Me.lblFecha.AutoSize = True
-        Me.lblFecha.BackColor = System.Drawing.Color.Transparent
-        Me.lblFecha.Font = New System.Drawing.Font("Arial Rounded MT Bold", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblFecha.Location = New System.Drawing.Point(34, 337)
-        Me.lblFecha.Name = "lblFecha"
-        Me.lblFecha.Size = New System.Drawing.Size(58, 18)
-        Me.lblFecha.TabIndex = 39
-        Me.lblFecha.Text = "Fecha"
         '
         'lblTipoServicio
         '
@@ -101,16 +88,6 @@ Partial Class ContratarServicio
         Me.lblIdSContratado.Size = New System.Drawing.Size(23, 18)
         Me.lblIdSContratado.TabIndex = 35
         Me.lblIdSContratado.Text = "Id"
-        '
-        'txtFechaContratarServicio
-        '
-        Me.txtFechaContratarServicio.Font = New System.Drawing.Font("Arial Rounded MT Bold", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtFechaContratarServicio.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.txtFechaContratarServicio.Location = New System.Drawing.Point(96, 334)
-        Me.txtFechaContratarServicio.Multiline = True
-        Me.txtFechaContratarServicio.Name = "txtFechaContratarServicio"
-        Me.txtFechaContratarServicio.Size = New System.Drawing.Size(347, 30)
-        Me.txtFechaContratarServicio.TabIndex = 34
         '
         'txtTipoContratarServicio
         '
@@ -172,12 +149,10 @@ Partial Class ContratarServicio
         Me.BackgroundImage = Global.Practico3_PIII_BDII___Bueno_Marcos.My.Resources.Resources.backAgregar
         Me.ClientSize = New System.Drawing.Size(484, 461)
         Me.Controls.Add(Me.Guardar)
-        Me.Controls.Add(Me.lblFecha)
         Me.Controls.Add(Me.lblTipoServicio)
         Me.Controls.Add(Me.lblCostoMensual)
         Me.Controls.Add(Me.lblNombreContrado)
         Me.Controls.Add(Me.lblIdSContratado)
-        Me.Controls.Add(Me.txtFechaContratarServicio)
         Me.Controls.Add(Me.txtTipoContratarServicio)
         Me.Controls.Add(Me.txtCostoMensual)
         Me.Controls.Add(Me.txtNombreContratarSrvicio)
@@ -191,12 +166,10 @@ Partial Class ContratarServicio
     End Sub
 
     Friend WithEvents lblAgregarUsuario As Label
-    Friend WithEvents lblFecha As Label
     Friend WithEvents lblTipoServicio As Label
     Friend WithEvents lblCostoMensual As Label
     Friend WithEvents lblNombreContrado As Label
     Friend WithEvents lblIdSContratado As Label
-    Friend WithEvents txtFechaContratarServicio As TextBox
     Friend WithEvents txtTipoContratarServicio As TextBox
     Friend WithEvents txtCostoMensual As TextBox
     Friend WithEvents txtNombreContratarSrvicio As TextBox
