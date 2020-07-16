@@ -30,6 +30,9 @@ Public Class ModuloServicios
         c.conectar()
         Try
             c.Comando.CommandText = "UPDATE servicio SET nombre ='" & Me.nombre & "', costoMensual =" & Me.costo & ", tipo ='" & Me.tipo & "', fechaHoraCreacion ='" & Me.fechaHoraCreacion & "', activo =" & Me.activo & " WHERE id = " & Me.id & ""
+
+
+
             c.Comando.ExecuteNonQuery()
 
         Catch ex As Exception

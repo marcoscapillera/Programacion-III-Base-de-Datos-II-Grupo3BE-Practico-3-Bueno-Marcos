@@ -8,6 +8,9 @@ Public Class ModuloContrata
     Public fechaContrata As String
     Public fechaContrato As String
     Public fechaFinContrato As String
+    Public idP As String
+    Public idS As String
+    Public fechaC1 As String
 
     Public Sub GuardarContrata()
         Dim c As New MouloConexion
@@ -26,7 +29,9 @@ Public Class ModuloContrata
         Dim c As New MouloConexion
         c.conectar()
         Try
-            c.Comando.CommandText = "UPDATE contrata SET idPersona= " & Me.idPersona & ", idServicio= " & Me.idServicio & ", fechaCreacion= '" & Me.fechaContrata & "', fechaContratacion= '" & Me.fechaContrato & "', fechaFinContrato= '" & Me.fechaFinContrato & "' )"
+            c.Comando.CommandText = "UPDATE practico3.contrata SET idPersona=" & Me.idPersona & ", idServicio=" & Me.idServicio & ", fechaCreacion='" & Me.fechaContrata & "', fechaContratacion='" & Me.fechaContrato & "', fechaFinContrato='" & Me.fechaFinContrato & "'  WHERE idPersona = " & Me.idP & " And idServicio = " & Me.idS & " And fechaCreacion ='" & Me.fechaC1 & "'"
+            MsgBox(c.Comando.CommandText)
+
             c.Comando.ExecuteNonQuery()
 
         Catch ex As Exception

@@ -1,6 +1,20 @@
 ﻿Imports CapaLogica
 Public Class ModificarContrata
+    Dim PkPersona As String
+    Dim PkServicios As String
+    Dim PkFechaCreacion As String
 
+
+    Private Sub DataGridContrata_RowHeaderMouseClick(sender As Object, e As DataGridViewCellMouseEventArgs) Handles DataGridContrata.RowHeaderMouseClick
+        PkPersona = DataGridContrata.Item(0, e.RowIndex).Value
+        PkServicios = DataGridContrata.Item(1, e.RowIndex).Value
+        PkFechaCreacion = DataGridContrata.Item(2, e.RowIndex).Value
+        cbxIdPersona.Text = DataGridContrata.Item(0, e.RowIndex).Value
+        cbxIdServicio.Text = DataGridContrata.Item(1, e.RowIndex).Value
+        txtFechaCreacion.Text = DataGridContrata.Item(2, e.RowIndex).Value
+        txtFechaContrato.Text = DataGridContrata.Item(3, e.RowIndex).Value
+        txtFechaFinContrato.Text = DataGridContrata.Item(4, e.RowIndex).Value
+    End Sub
     Private Sub btnModificar_Click(sender As Object, e As EventArgs) Handles btnModificar.Click
         If habilitaModificar() = True Then
             Try
@@ -8,7 +22,10 @@ Public Class ModificarContrata
                                                      cbxIdServicio.Text,
                                                      txtFechaCreacion.Text,
                                                      txtFechaContrato.Text,
-                                                     txtFechaFinContrato.Text)
+                                                     txtFechaFinContrato.Text,
+                                                     PkPersona,
+                                                     PkServicios,
+                                                     PkFechaCreacion)
                 MsgBox("Datos de cliente guardado correctamente")
                 limpiarCajas()
             Catch ex As Exception
@@ -38,26 +55,6 @@ Public Class ModificarContrata
         Catch ex As Exception
             MsgBox("Hubo un error")
         End Try
-    End Sub
-
-    Private Sub DataGridContrata_RowHeaderMouseClick(sender As Object, e As DataGridViewCellMouseEventArgs) Handles DataGridContrata.RowHeaderMouseClick
-        Dim PkPersona As String
-        Dim PkServicios As String
-        PkPersona = DataGridContrata.Item(0, e.RowIndex).Value
-        PkServicios = DataGridContrata.Item(1, e.RowIndex).Value
-        EnviaPkP(PkPersona)
-        EnviaPkS(PkServicios)
-
-
-
-
-        cbxIdPersona.Text = DataGridContrata.Item(0, e.RowIndex).Value
-        cbxIdServicio.Text = DataGridContrata.Item(1, e.RowIndex).Value
-        txtFechaCreacion.Text = DataGridContrata.Item(2, e.RowIndex).Value
-        txtFechaContrato.Text = DataGridContrata.Item(3, e.RowIndex).Value
-        txtFechaFinContrato.Text = DataGridContrata.Item(4, e.RowIndex).Value
-
-
     End Sub
 
     Public Sub limpiarCajas()
@@ -109,13 +106,4 @@ Public Class ModificarContrata
             MsgBox("Hubo un error")
         End Try
     End Sub
-
-    Public Function EnviaPkP(PkP As String) As String
-        Return PkP
-    End Function
-
-    Public Function EnviaPkS(PkServicios As String) As String
-        Return PkServicios
-    End Function
-
 End Class

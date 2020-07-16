@@ -12,7 +12,7 @@ Public Module ControladorContrata
         c.GuardarContrata()
     End Sub
 
-    Public Sub ModificarContrata(IdPersona As String, idServicio As String, fechaContrata As String, fechaContrato As String, fechaFinContrato As String)
+    Public Sub ModificarContrata(IdPersona As String, idServicio As String, fechaContrata As String, fechaContrato As String, fechaFinContrato As String, idP As String, idS As String, FechaC1 As String)
         'Modifica los datos de Contrata
         Dim c As New ModuloContrata
         c.idPersona = IdPersona
@@ -20,6 +20,9 @@ Public Module ControladorContrata
         c.fechaContrata = fechaContrata
         c.fechaContrato = fechaContrato
         c.fechaFinContrato = fechaFinContrato
+        c.idP = idP
+        c.idS = idS
+        c.fechaC1 = FechaC1
         c.ModificaContrata()
     End Sub
 
