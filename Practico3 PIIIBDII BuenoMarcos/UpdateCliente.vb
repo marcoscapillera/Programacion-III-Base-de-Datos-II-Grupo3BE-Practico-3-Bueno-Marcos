@@ -25,7 +25,7 @@ Public Class UpdateCliente
 
     Public Function habilitaModificar() As Boolean
         If txtIdModificarCliente.Text <> "" And txtNombreModificarCliente.Text <> "" And txtApellidoModificarCliente.Text <> "" And
-           txtMailModificarCliente.Text <> "" And txtFechaModificarCliente.Text <> "" And txtTelefono1ModificarCliente.Text <> "" And
+           txtMailModificarCliente.Text <> "" And txtTelefono1ModificarCliente.Text <> "" And
            txtTelefono2ModificarCliente.Text <> "" Then
             Return True
         Else
@@ -37,7 +37,6 @@ Public Class UpdateCliente
         txtNombreModificarCliente.Text = ""
         txtApellidoModificarCliente.Text = ""
         txtMailModificarCliente.Text = ""
-        txtFechaModificarCliente.Text = ""
         checkActivo.CheckState = CheckState.Checked
         txtTelefono1ModificarCliente.Text = ""
         txtTelefono2ModificarCliente.Text = ""

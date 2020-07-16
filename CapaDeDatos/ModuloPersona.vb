@@ -63,11 +63,14 @@ Public Class ModuloPersona
             c.Comando.CommandText = "UPDATE  persona  SET nombre ='" & Me.nombre & "', apellido ='" & Me.apellido & "', mail='" & Me.mail & "', activo= " & Me.activo & "  WHERE id= " & Me.id
             c.Comando.ExecuteNonQuery()
 
-
-            c.Comando.CommandText = "UPDATE personatelefono SET telefono =" & Me.telefono1 & " WHERE id = " & Me.id & ""
+            c.Comando.CommandText = "insert into personatelefono (id, telefono) values  ( '" & Me.id & "', '" & Me.telefono1 & "' ) ON DUPLICATE KEY UPDATE telefono =" & Me.telefono1 & " "
+            'c.Comando.CommandText = "UPDATE personatelefono SET telefono =" & Me.telefono1 & " WHERE id = " & Me.id & " ON DUPLICATE KEY UPDATE telefono =" & Me.telefono1 & " "
             c.Comando.ExecuteNonQuery()
 
-            c.Comando.CommandText = "UPDATE personatelefono SET telefono =" & Me.telefono2 & " WHERE id = " & Me.id & ""
+
+            c.Comando.CommandText = "insert into personatelefono (id, telefono) values  ( '" & Me.id & "', '" & Me.telefono2 & "' ) ON DUPLICATE KEY UPDATE telefono =" & Me.telefono2 & " "
+
+            'c.Comando.CommandText = "UPDATE personatelefono SET telefono =" & Me.telefono2 & " WHERE id = " & Me.id & " ON DUPLICATE KEY UPDATE telefono =" & Me.telefono2 & " "
             c.Comando.ExecuteNonQuery()
 
             c.Comando.CommandText = "COMMIT;"

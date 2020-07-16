@@ -112,7 +112,7 @@ Partial Class Gestor
         '
         Me.EliminarClienteToolStripMenuItem.Name = "EliminarClienteToolStripMenuItem"
         Me.EliminarClienteToolStripMenuItem.Size = New System.Drawing.Size(185, 22)
-        Me.EliminarClienteToolStripMenuItem.Text = "Eliminar Cliente"
+        Me.EliminarClienteToolStripMenuItem.Text = "Baja Cliente"
         '
         'ServiciosToolStripMenuItem
         '
@@ -125,20 +125,20 @@ Partial Class Gestor
         'ContratarToolStripMenuItem1
         '
         Me.ContratarToolStripMenuItem1.Name = "ContratarToolStripMenuItem1"
-        Me.ContratarToolStripMenuItem1.Size = New System.Drawing.Size(135, 22)
-        Me.ContratarToolStripMenuItem1.Text = "Nuevo"
+        Me.ContratarToolStripMenuItem1.Size = New System.Drawing.Size(192, 22)
+        Me.ContratarToolStripMenuItem1.Text = "Nuevo Servicio"
         '
         'ModificarToolStripMenuItem
         '
         Me.ModificarToolStripMenuItem.Name = "ModificarToolStripMenuItem"
-        Me.ModificarToolStripMenuItem.Size = New System.Drawing.Size(135, 22)
-        Me.ModificarToolStripMenuItem.Text = "Modificar"
+        Me.ModificarToolStripMenuItem.Size = New System.Drawing.Size(192, 22)
+        Me.ModificarToolStripMenuItem.Text = "Modificar Servicio"
         '
         'EliminarToolStripMenuItem
         '
         Me.EliminarToolStripMenuItem.Name = "EliminarToolStripMenuItem"
-        Me.EliminarToolStripMenuItem.Size = New System.Drawing.Size(135, 22)
-        Me.EliminarToolStripMenuItem.Text = "Eliminar"
+        Me.EliminarToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.EliminarToolStripMenuItem.Text = "Baja Servicio"
         '
         'ContratarToolStripMenuItem
         '

@@ -22,7 +22,6 @@ Partial Class UpdateCliente
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Me.lblFechaModificarCliente = New System.Windows.Forms.Label()
         Me.lblTelefono2ModificarCliente = New System.Windows.Forms.Label()
         Me.txtTelefono2ModificarCliente = New System.Windows.Forms.TextBox()
         Me.lblMailModificarCliente = New System.Windows.Forms.Label()
@@ -32,7 +31,6 @@ Partial Class UpdateCliente
         Me.lblIdModificarCliente = New System.Windows.Forms.Label()
         Me.txtTelefono1ModificarCliente = New System.Windows.Forms.TextBox()
         Me.checkActivo = New System.Windows.Forms.CheckBox()
-        Me.txtFechaModificarCliente = New System.Windows.Forms.TextBox()
         Me.txtMailModificarCliente = New System.Windows.Forms.TextBox()
         Me.txtApellidoModificarCliente = New System.Windows.Forms.TextBox()
         Me.txtNombreModificarCliente = New System.Windows.Forms.TextBox()
@@ -48,17 +46,6 @@ Partial Class UpdateCliente
         CType(Me.DataGridCliente, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
-        '
-        'lblFechaModificarCliente
-        '
-        Me.lblFechaModificarCliente.AutoSize = True
-        Me.lblFechaModificarCliente.BackColor = System.Drawing.Color.Transparent
-        Me.lblFechaModificarCliente.Font = New System.Drawing.Font("Arial Rounded MT Bold", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblFechaModificarCliente.Location = New System.Drawing.Point(37, 499)
-        Me.lblFechaModificarCliente.Name = "lblFechaModificarCliente"
-        Me.lblFechaModificarCliente.Size = New System.Drawing.Size(58, 18)
-        Me.lblFechaModificarCliente.TabIndex = 63
-        Me.lblFechaModificarCliente.Text = "Fecha"
         '
         'lblTelefono2ModificarCliente
         '
@@ -151,22 +138,12 @@ Partial Class UpdateCliente
         Me.checkActivo.AutoSize = True
         Me.checkActivo.BackColor = System.Drawing.Color.Transparent
         Me.checkActivo.Font = New System.Drawing.Font("Arial Rounded MT Bold", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.checkActivo.Location = New System.Drawing.Point(136, 546)
+        Me.checkActivo.Location = New System.Drawing.Point(136, 504)
         Me.checkActivo.Name = "checkActivo"
         Me.checkActivo.Size = New System.Drawing.Size(78, 22)
         Me.checkActivo.TabIndex = 54
         Me.checkActivo.Text = "Activo"
         Me.checkActivo.UseVisualStyleBackColor = False
-        '
-        'txtFechaModificarCliente
-        '
-        Me.txtFechaModificarCliente.Font = New System.Drawing.Font("Arial Rounded MT Bold", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtFechaModificarCliente.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.txtFechaModificarCliente.Location = New System.Drawing.Point(136, 496)
-        Me.txtFechaModificarCliente.Multiline = True
-        Me.txtFechaModificarCliente.Name = "txtFechaModificarCliente"
-        Me.txtFechaModificarCliente.Size = New System.Drawing.Size(311, 30)
-        Me.txtFechaModificarCliente.TabIndex = 53
         '
         'txtMailModificarCliente
         '
@@ -308,7 +285,6 @@ Partial Class UpdateCliente
         Me.Controls.Add(Me.buscar)
         Me.Controls.Add(Me.DataGridCliente)
         Me.Controls.Add(Me.btnEnable)
-        Me.Controls.Add(Me.lblFechaModificarCliente)
         Me.Controls.Add(Me.lblTelefono2ModificarCliente)
         Me.Controls.Add(Me.txtTelefono2ModificarCliente)
         Me.Controls.Add(Me.lblMailModificarCliente)
@@ -318,7 +294,6 @@ Partial Class UpdateCliente
         Me.Controls.Add(Me.lblIdModificarCliente)
         Me.Controls.Add(Me.txtTelefono1ModificarCliente)
         Me.Controls.Add(Me.checkActivo)
-        Me.Controls.Add(Me.txtFechaModificarCliente)
         Me.Controls.Add(Me.btnModificar)
         Me.Controls.Add(Me.txtMailModificarCliente)
         Me.Controls.Add(Me.txtApellidoModificarCliente)
@@ -335,7 +310,6 @@ Partial Class UpdateCliente
     End Sub
 
     Friend WithEvents btnEnable As Button
-    Friend WithEvents lblFechaModificarCliente As Label
     Friend WithEvents lblTelefono2ModificarCliente As Label
     Friend WithEvents txtTelefono2ModificarCliente As TextBox
     Friend WithEvents lblMailModificarCliente As Label
@@ -345,7 +319,6 @@ Partial Class UpdateCliente
     Friend WithEvents lblIdModificarCliente As Label
     Friend WithEvents txtTelefono1ModificarCliente As TextBox
     Friend WithEvents checkActivo As CheckBox
-    Friend WithEvents txtFechaModificarCliente As TextBox
     Friend WithEvents btnModificar As Button
     Friend WithEvents txtMailModificarCliente As TextBox
     Friend WithEvents txtApellidoModificarCliente As TextBox
