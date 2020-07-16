@@ -87,19 +87,7 @@ Public Class ModuloPersona
         c.conectar()
         Try
 
-            c.Comando.CommandText = "SET AUTOCOMMIT = OFF;"
-            c.Comando.ExecuteNonQuery()
-
-            c.Comando.CommandText = "START TRANSACTION;"
-            c.Comando.ExecuteNonQuery()
-
-            c.Comando.CommandText = "DELETE FROM personatelefono  WHERE id= " & Me.id
-            c.Comando.ExecuteNonQuery()
-
-            c.Comando.CommandText = "DELETE FROM persona  WHERE id= " & Me.id
-            c.Comando.ExecuteNonQuery()
-
-            c.Comando.CommandText = "COMMIT;"
+            c.Comando.CommandText = "UPDATE persona SET  activo=0 WHERE id = " & Me.id
             c.Comando.ExecuteNonQuery()
 
         Catch ex As Exception

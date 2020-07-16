@@ -70,6 +70,7 @@ Partial Class EliminarCliente
         '
         'DataGridEliminarCliente
         '
+        Me.DataGridEliminarCliente.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.DataGridEliminarCliente.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DataGridEliminarCliente.Location = New System.Drawing.Point(499, 154)
         Me.DataGridEliminarCliente.Name = "DataGridEliminarCliente"

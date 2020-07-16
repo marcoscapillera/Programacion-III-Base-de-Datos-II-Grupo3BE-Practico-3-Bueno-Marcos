@@ -68,6 +68,7 @@ Partial Class EliminarServicio
         '
         'DataGridEliminarServicio
         '
+        Me.DataGridEliminarServicio.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.DataGridEliminarServicio.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DataGridEliminarServicio.Location = New System.Drawing.Point(481, 159)
         Me.DataGridEliminarServicio.Name = "DataGridEliminarServicio"

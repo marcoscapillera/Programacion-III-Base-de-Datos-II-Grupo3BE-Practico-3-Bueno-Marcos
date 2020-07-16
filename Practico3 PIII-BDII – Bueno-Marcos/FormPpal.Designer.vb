@@ -45,7 +45,7 @@ Partial Class Gestor
         Me.TabPage2 = New System.Windows.Forms.TabPage()
         Me.listadoServicios = New System.Windows.Forms.DataGridView()
         Me.ListadoContratados = New System.Windows.Forms.TabPage()
-        Me.DataGridView2 = New System.Windows.Forms.DataGridView()
+        Me.DataGridContrata = New System.Windows.Forms.DataGridView()
         Me.btnActualizar = New System.Windows.Forms.Button()
         Me.MenuStrip1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -55,7 +55,7 @@ Partial Class Gestor
         Me.TabPage2.SuspendLayout()
         CType(Me.listadoServicios, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.ListadoContratados.SuspendLayout()
-        CType(Me.DataGridView2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DataGridContrata, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'MenuStrip1
@@ -151,13 +151,13 @@ Partial Class Gestor
         'NuevoToolStripMenuItem
         '
         Me.NuevoToolStripMenuItem.Name = "NuevoToolStripMenuItem"
-        Me.NuevoToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.NuevoToolStripMenuItem.Size = New System.Drawing.Size(135, 22)
         Me.NuevoToolStripMenuItem.Text = "Nuevo"
         '
         'ModificarToolStripMenuItem1
         '
         Me.ModificarToolStripMenuItem1.Name = "ModificarToolStripMenuItem1"
-        Me.ModificarToolStripMenuItem1.Size = New System.Drawing.Size(180, 22)
+        Me.ModificarToolStripMenuItem1.Size = New System.Drawing.Size(135, 22)
         Me.ModificarToolStripMenuItem1.Text = "Modificar"
         '
         'buscar
@@ -203,6 +203,7 @@ Partial Class Gestor
         '
         'listadoClientes
         '
+        Me.listadoClientes.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.listadoClientes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.listadoClientes.Location = New System.Drawing.Point(6, 6)
         Me.listadoClientes.Name = "listadoClientes"
@@ -222,15 +223,16 @@ Partial Class Gestor
         '
         'listadoServicios
         '
+        Me.listadoServicios.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.listadoServicios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.listadoServicios.Location = New System.Drawing.Point(19, 19)
+        Me.listadoServicios.Location = New System.Drawing.Point(6, 3)
         Me.listadoServicios.Name = "listadoServicios"
-        Me.listadoServicios.Size = New System.Drawing.Size(856, 283)
+        Me.listadoServicios.Size = New System.Drawing.Size(881, 317)
         Me.listadoServicios.TabIndex = 0
         '
         'ListadoContratados
         '
-        Me.ListadoContratados.Controls.Add(Me.DataGridView2)
+        Me.ListadoContratados.Controls.Add(Me.DataGridContrata)
         Me.ListadoContratados.Location = New System.Drawing.Point(4, 24)
         Me.ListadoContratados.Name = "ListadoContratados"
         Me.ListadoContratados.Padding = New System.Windows.Forms.Padding(3)
@@ -239,13 +241,14 @@ Partial Class Gestor
         Me.ListadoContratados.Text = "Listado Servicios Contratados"
         Me.ListadoContratados.UseVisualStyleBackColor = True
         '
-        'DataGridView2
+        'DataGridContrata
         '
-        Me.DataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView2.Location = New System.Drawing.Point(6, 6)
-        Me.DataGridView2.Name = "DataGridView2"
-        Me.DataGridView2.Size = New System.Drawing.Size(881, 311)
-        Me.DataGridView2.TabIndex = 0
+        Me.DataGridContrata.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
+        Me.DataGridContrata.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataGridContrata.Location = New System.Drawing.Point(6, 6)
+        Me.DataGridContrata.Name = "DataGridContrata"
+        Me.DataGridContrata.Size = New System.Drawing.Size(881, 311)
+        Me.DataGridContrata.TabIndex = 0
         '
         'btnActualizar
         '
@@ -284,7 +287,7 @@ Partial Class Gestor
         Me.TabPage2.ResumeLayout(False)
         CType(Me.listadoServicios, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ListadoContratados.ResumeLayout(False)
-        CType(Me.DataGridView2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DataGridContrata, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -313,5 +316,5 @@ Partial Class Gestor
     Friend WithEvents btnActualizar As Button
     Friend WithEvents listadoServicios As DataGridView
     Friend WithEvents ListadoContratados As TabPage
-    Friend WithEvents DataGridView2 As DataGridView
+    Friend WithEvents DataGridContrata As DataGridView
 End Class

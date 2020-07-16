@@ -45,7 +45,7 @@ Public Class ModuloServicios
         Dim c As New MouloConexion
         c.conectar()
         Try
-            c.Comando.CommandText = "DELETE FROM servicio WHERE id = " & Me.id & ""
+            c.Comando.CommandText = "UPDATE servicio SET  activo=0 WHERE id = " & Me.id
             c.Comando.ExecuteNonQuery()
 
         Catch ex As Exception
