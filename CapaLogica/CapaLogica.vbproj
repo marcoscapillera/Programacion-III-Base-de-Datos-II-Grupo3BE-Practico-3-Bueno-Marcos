@@ -64,6 +64,7 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ControladorContrata.vb" />
     <Compile Include="ControladorPersonas.vb" />
     <Compile Include="ControladorServicios.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />

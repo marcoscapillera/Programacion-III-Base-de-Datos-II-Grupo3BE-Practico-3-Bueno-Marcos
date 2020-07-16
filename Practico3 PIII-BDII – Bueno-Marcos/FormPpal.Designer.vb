@@ -125,19 +125,19 @@ Partial Class Gestor
         'ContratarToolStripMenuItem1
         '
         Me.ContratarToolStripMenuItem1.Name = "ContratarToolStripMenuItem1"
-        Me.ContratarToolStripMenuItem1.Size = New System.Drawing.Size(180, 22)
+        Me.ContratarToolStripMenuItem1.Size = New System.Drawing.Size(135, 22)
         Me.ContratarToolStripMenuItem1.Text = "Nuevo"
         '
         'ModificarToolStripMenuItem
         '
         Me.ModificarToolStripMenuItem.Name = "ModificarToolStripMenuItem"
-        Me.ModificarToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.ModificarToolStripMenuItem.Size = New System.Drawing.Size(135, 22)
         Me.ModificarToolStripMenuItem.Text = "Modificar"
         '
         'EliminarToolStripMenuItem
         '
         Me.EliminarToolStripMenuItem.Name = "EliminarToolStripMenuItem"
-        Me.EliminarToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.EliminarToolStripMenuItem.Size = New System.Drawing.Size(135, 22)
         Me.EliminarToolStripMenuItem.Text = "Eliminar"
         '
         'ContratarToolStripMenuItem
@@ -151,13 +151,13 @@ Partial Class Gestor
         'NuevoToolStripMenuItem
         '
         Me.NuevoToolStripMenuItem.Name = "NuevoToolStripMenuItem"
-        Me.NuevoToolStripMenuItem.Size = New System.Drawing.Size(135, 22)
+        Me.NuevoToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.NuevoToolStripMenuItem.Text = "Nuevo"
         '
         'ModificarToolStripMenuItem1
         '
         Me.ModificarToolStripMenuItem1.Name = "ModificarToolStripMenuItem1"
-        Me.ModificarToolStripMenuItem1.Size = New System.Drawing.Size(135, 22)
+        Me.ModificarToolStripMenuItem1.Size = New System.Drawing.Size(180, 22)
         Me.ModificarToolStripMenuItem1.Text = "Modificar"
         '
         'buscar

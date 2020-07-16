@@ -23,15 +23,18 @@ Partial Class ContratarServicio
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.lblAgregarUsuario = New System.Windows.Forms.Label()
-        Me.lblTipoServicio = New System.Windows.Forms.Label()
+        Me.btnEnable = New System.Windows.Forms.Button()
+        Me.btnGuardar = New System.Windows.Forms.Button()
+        Me.lblFechaServicio = New System.Windows.Forms.Label()
+        Me.lblTipo = New System.Windows.Forms.Label()
         Me.lblCostoMensual = New System.Windows.Forms.Label()
-        Me.lblNombreContrado = New System.Windows.Forms.Label()
-        Me.lblIdSContratado = New System.Windows.Forms.Label()
-        Me.txtTipoContratarServicio = New System.Windows.Forms.TextBox()
-        Me.txtCostoMensual = New System.Windows.Forms.TextBox()
-        Me.txtNombreContratarSrvicio = New System.Windows.Forms.TextBox()
-        Me.txtIdContratarServicio = New System.Windows.Forms.TextBox()
-        Me.Guardar = New System.Windows.Forms.Button()
+        Me.lblIdServicio = New System.Windows.Forms.Label()
+        Me.txtFechaNuevoServicio = New System.Windows.Forms.TextBox()
+        Me.txtCostoMensualNuevoServicio = New System.Windows.Forms.TextBox()
+        Me.cbxIdPersona = New System.Windows.Forms.ComboBox()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.cbxIdServicio = New System.Windows.Forms.ComboBox()
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.SuspendLayout()
         '
         'lblAgregarUsuario
@@ -45,102 +48,134 @@ Partial Class ContratarServicio
         Me.lblAgregarUsuario.TabIndex = 2
         Me.lblAgregarUsuario.Text = "Contratar Servicio"
         '
-        'lblTipoServicio
+        'btnEnable
         '
-        Me.lblTipoServicio.AutoSize = True
-        Me.lblTipoServicio.BackColor = System.Drawing.Color.Transparent
-        Me.lblTipoServicio.Font = New System.Drawing.Font("Arial Rounded MT Bold", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblTipoServicio.Location = New System.Drawing.Point(34, 288)
-        Me.lblTipoServicio.Name = "lblTipoServicio"
-        Me.lblTipoServicio.Size = New System.Drawing.Size(42, 18)
-        Me.lblTipoServicio.TabIndex = 38
-        Me.lblTipoServicio.Text = "Tipo"
+        Me.btnEnable.BackColor = System.Drawing.Color.Transparent
+        Me.btnEnable.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnEnable.Font = New System.Drawing.Font("Arial Rounded MT Bold", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnEnable.ForeColor = System.Drawing.Color.Indigo
+        Me.btnEnable.Location = New System.Drawing.Point(260, 403)
+        Me.btnEnable.Name = "btnEnable"
+        Me.btnEnable.Size = New System.Drawing.Size(89, 34)
+        Me.btnEnable.TabIndex = 79
+        Me.btnEnable.Text = "Actualizar"
+        Me.btnEnable.UseVisualStyleBackColor = False
+        '
+        'btnGuardar
+        '
+        Me.btnGuardar.BackColor = System.Drawing.Color.Transparent
+        Me.btnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnGuardar.Font = New System.Drawing.Font("Arial Rounded MT Bold", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnGuardar.ForeColor = System.Drawing.Color.MediumSeaGreen
+        Me.btnGuardar.Location = New System.Drawing.Point(355, 403)
+        Me.btnGuardar.Name = "btnGuardar"
+        Me.btnGuardar.Size = New System.Drawing.Size(89, 34)
+        Me.btnGuardar.TabIndex = 78
+        Me.btnGuardar.Text = "Guardar"
+        Me.btnGuardar.UseVisualStyleBackColor = False
+        '
+        'lblFechaServicio
+        '
+        Me.lblFechaServicio.AutoSize = True
+        Me.lblFechaServicio.BackColor = System.Drawing.Color.Transparent
+        Me.lblFechaServicio.Font = New System.Drawing.Font("Arial Rounded MT Bold", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblFechaServicio.Location = New System.Drawing.Point(35, 334)
+        Me.lblFechaServicio.Name = "lblFechaServicio"
+        Me.lblFechaServicio.Size = New System.Drawing.Size(161, 18)
+        Me.lblFechaServicio.TabIndex = 76
+        Me.lblFechaServicio.Text = "Fecha Fin Contrato"
+        '
+        'lblTipo
+        '
+        Me.lblTipo.AutoSize = True
+        Me.lblTipo.BackColor = System.Drawing.Color.Transparent
+        Me.lblTipo.Font = New System.Drawing.Font("Arial Rounded MT Bold", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblTipo.Location = New System.Drawing.Point(35, 285)
+        Me.lblTipo.Name = "lblTipo"
+        Me.lblTipo.Size = New System.Drawing.Size(113, 18)
+        Me.lblTipo.TabIndex = 75
+        Me.lblTipo.Text = "Contratacion"
         '
         'lblCostoMensual
         '
         Me.lblCostoMensual.AutoSize = True
         Me.lblCostoMensual.BackColor = System.Drawing.Color.Transparent
         Me.lblCostoMensual.Font = New System.Drawing.Font("Arial Rounded MT Bold", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblCostoMensual.Location = New System.Drawing.Point(34, 239)
+        Me.lblCostoMensual.Location = New System.Drawing.Point(35, 236)
         Me.lblCostoMensual.Name = "lblCostoMensual"
-        Me.lblCostoMensual.Size = New System.Drawing.Size(125, 18)
-        Me.lblCostoMensual.TabIndex = 37
-        Me.lblCostoMensual.Text = "Costo Mensual"
+        Me.lblCostoMensual.Size = New System.Drawing.Size(135, 18)
+        Me.lblCostoMensual.TabIndex = 74
+        Me.lblCostoMensual.Text = "Fecha Creacion"
         '
-        'lblNombreContrado
+        'lblIdServicio
         '
-        Me.lblNombreContrado.AutoSize = True
-        Me.lblNombreContrado.BackColor = System.Drawing.Color.Transparent
-        Me.lblNombreContrado.Font = New System.Drawing.Font("Arial Rounded MT Bold", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblNombreContrado.Location = New System.Drawing.Point(34, 183)
-        Me.lblNombreContrado.Name = "lblNombreContrado"
-        Me.lblNombreContrado.Size = New System.Drawing.Size(71, 18)
-        Me.lblNombreContrado.TabIndex = 36
-        Me.lblNombreContrado.Text = "Nombre"
+        Me.lblIdServicio.AutoSize = True
+        Me.lblIdServicio.BackColor = System.Drawing.Color.Transparent
+        Me.lblIdServicio.Font = New System.Drawing.Font("Arial Rounded MT Bold", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblIdServicio.Location = New System.Drawing.Point(35, 126)
+        Me.lblIdServicio.Name = "lblIdServicio"
+        Me.lblIdServicio.Size = New System.Drawing.Size(83, 18)
+        Me.lblIdServicio.TabIndex = 72
+        Me.lblIdServicio.Text = "Id Cliente"
         '
-        'lblIdSContratado
+        'txtFechaNuevoServicio
         '
-        Me.lblIdSContratado.AutoSize = True
-        Me.lblIdSContratado.BackColor = System.Drawing.Color.Transparent
-        Me.lblIdSContratado.Font = New System.Drawing.Font("Arial Rounded MT Bold", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblIdSContratado.Location = New System.Drawing.Point(34, 129)
-        Me.lblIdSContratado.Name = "lblIdSContratado"
-        Me.lblIdSContratado.Size = New System.Drawing.Size(23, 18)
-        Me.lblIdSContratado.TabIndex = 35
-        Me.lblIdSContratado.Text = "Id"
+        Me.txtFechaNuevoServicio.Font = New System.Drawing.Font("Arial Rounded MT Bold", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtFechaNuevoServicio.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.txtFechaNuevoServicio.Location = New System.Drawing.Point(202, 331)
+        Me.txtFechaNuevoServicio.Multiline = True
+        Me.txtFechaNuevoServicio.Name = "txtFechaNuevoServicio"
+        Me.txtFechaNuevoServicio.Size = New System.Drawing.Size(242, 26)
+        Me.txtFechaNuevoServicio.TabIndex = 71
         '
-        'txtTipoContratarServicio
+        'txtCostoMensualNuevoServicio
         '
-        Me.txtTipoContratarServicio.Font = New System.Drawing.Font("Arial Rounded MT Bold", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtTipoContratarServicio.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.txtTipoContratarServicio.Location = New System.Drawing.Point(96, 285)
-        Me.txtTipoContratarServicio.Multiline = True
-        Me.txtTipoContratarServicio.Name = "txtTipoContratarServicio"
-        Me.txtTipoContratarServicio.Size = New System.Drawing.Size(347, 30)
-        Me.txtTipoContratarServicio.TabIndex = 33
+        Me.txtCostoMensualNuevoServicio.Font = New System.Drawing.Font("Arial Rounded MT Bold", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtCostoMensualNuevoServicio.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.txtCostoMensualNuevoServicio.Location = New System.Drawing.Point(202, 233)
+        Me.txtCostoMensualNuevoServicio.Multiline = True
+        Me.txtCostoMensualNuevoServicio.Name = "txtCostoMensualNuevoServicio"
+        Me.txtCostoMensualNuevoServicio.Size = New System.Drawing.Size(242, 26)
+        Me.txtCostoMensualNuevoServicio.TabIndex = 70
         '
-        'txtCostoMensual
+        'cbxIdPersona
         '
-        Me.txtCostoMensual.Font = New System.Drawing.Font("Arial Rounded MT Bold", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtCostoMensual.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.txtCostoMensual.Location = New System.Drawing.Point(165, 236)
-        Me.txtCostoMensual.Multiline = True
-        Me.txtCostoMensual.Name = "txtCostoMensual"
-        Me.txtCostoMensual.Size = New System.Drawing.Size(278, 30)
-        Me.txtCostoMensual.TabIndex = 32
+        Me.cbxIdPersona.Font = New System.Drawing.Font("Arial Rounded MT Bold", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cbxIdPersona.FormattingEnabled = True
+        Me.cbxIdPersona.Location = New System.Drawing.Point(166, 126)
+        Me.cbxIdPersona.Name = "cbxIdPersona"
+        Me.cbxIdPersona.Size = New System.Drawing.Size(87, 26)
+        Me.cbxIdPersona.TabIndex = 81
         '
-        'txtNombreContratarSrvicio
+        'Label1
         '
-        Me.txtNombreContratarSrvicio.Font = New System.Drawing.Font("Arial Rounded MT Bold", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtNombreContratarSrvicio.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.txtNombreContratarSrvicio.Location = New System.Drawing.Point(165, 180)
-        Me.txtNombreContratarSrvicio.Multiline = True
-        Me.txtNombreContratarSrvicio.Name = "txtNombreContratarSrvicio"
-        Me.txtNombreContratarSrvicio.Size = New System.Drawing.Size(278, 30)
-        Me.txtNombreContratarSrvicio.TabIndex = 31
+        Me.Label1.AutoSize = True
+        Me.Label1.BackColor = System.Drawing.Color.Transparent
+        Me.Label1.Font = New System.Drawing.Font("Arial Rounded MT Bold", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(35, 177)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(92, 18)
+        Me.Label1.TabIndex = 82
+        Me.Label1.Text = "Id Servicio"
         '
-        'txtIdContratarServicio
+        'cbxIdServicio
         '
-        Me.txtIdContratarServicio.Font = New System.Drawing.Font("Arial Rounded MT Bold", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtIdContratarServicio.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.txtIdContratarServicio.Location = New System.Drawing.Point(165, 129)
-        Me.txtIdContratarServicio.Multiline = True
-        Me.txtIdContratarServicio.Name = "txtIdContratarServicio"
-        Me.txtIdContratarServicio.Size = New System.Drawing.Size(278, 30)
-        Me.txtIdContratarServicio.TabIndex = 30
+        Me.cbxIdServicio.Font = New System.Drawing.Font("Arial Rounded MT Bold", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cbxIdServicio.FormattingEnabled = True
+        Me.cbxIdServicio.Location = New System.Drawing.Point(166, 174)
+        Me.cbxIdServicio.Name = "cbxIdServicio"
+        Me.cbxIdServicio.Size = New System.Drawing.Size(87, 26)
+        Me.cbxIdServicio.TabIndex = 83
         '
-        'Guardar
+        'TextBox1
         '
-        Me.Guardar.BackgroundImage = Global.Practico3_PIII_BDII___Bueno_Marcos.My.Resources.Resources.backButton
-        Me.Guardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Guardar.Font = New System.Drawing.Font("Arial Rounded MT Bold", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Guardar.ForeColor = System.Drawing.Color.White
-        Me.Guardar.Location = New System.Drawing.Point(354, 398)
-        Me.Guardar.Name = "Guardar"
-        Me.Guardar.Size = New System.Drawing.Size(89, 34)
-        Me.Guardar.TabIndex = 40
-        Me.Guardar.Text = "Guardar"
-        Me.Guardar.UseVisualStyleBackColor = True
+        Me.TextBox1.Font = New System.Drawing.Font("Arial Rounded MT Bold", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.TextBox1.Location = New System.Drawing.Point(202, 285)
+        Me.TextBox1.Multiline = True
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.Size = New System.Drawing.Size(242, 26)
+        Me.TextBox1.TabIndex = 84
         '
         'ContratarServicio
         '
@@ -148,15 +183,18 @@ Partial Class ContratarServicio
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.Practico3_PIII_BDII___Bueno_Marcos.My.Resources.Resources.backAgregar
         Me.ClientSize = New System.Drawing.Size(484, 461)
-        Me.Controls.Add(Me.Guardar)
-        Me.Controls.Add(Me.lblTipoServicio)
+        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.cbxIdServicio)
+        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.cbxIdPersona)
+        Me.Controls.Add(Me.btnEnable)
+        Me.Controls.Add(Me.btnGuardar)
+        Me.Controls.Add(Me.lblFechaServicio)
+        Me.Controls.Add(Me.lblTipo)
         Me.Controls.Add(Me.lblCostoMensual)
-        Me.Controls.Add(Me.lblNombreContrado)
-        Me.Controls.Add(Me.lblIdSContratado)
-        Me.Controls.Add(Me.txtTipoContratarServicio)
-        Me.Controls.Add(Me.txtCostoMensual)
-        Me.Controls.Add(Me.txtNombreContratarSrvicio)
-        Me.Controls.Add(Me.txtIdContratarServicio)
+        Me.Controls.Add(Me.lblIdServicio)
+        Me.Controls.Add(Me.txtFechaNuevoServicio)
+        Me.Controls.Add(Me.txtCostoMensualNuevoServicio)
         Me.Controls.Add(Me.lblAgregarUsuario)
         Me.Name = "ContratarServicio"
         Me.Text = "ContratarServicio"
@@ -166,13 +204,16 @@ Partial Class ContratarServicio
     End Sub
 
     Friend WithEvents lblAgregarUsuario As Label
-    Friend WithEvents lblTipoServicio As Label
+    Friend WithEvents btnEnable As Button
+    Friend WithEvents btnGuardar As Button
+    Friend WithEvents lblFechaServicio As Label
+    Friend WithEvents lblTipo As Label
     Friend WithEvents lblCostoMensual As Label
-    Friend WithEvents lblNombreContrado As Label
-    Friend WithEvents lblIdSContratado As Label
-    Friend WithEvents txtTipoContratarServicio As TextBox
-    Friend WithEvents txtCostoMensual As TextBox
-    Friend WithEvents txtNombreContratarSrvicio As TextBox
-    Friend WithEvents txtIdContratarServicio As TextBox
-    Friend WithEvents Guardar As Button
+    Friend WithEvents lblIdServicio As Label
+    Friend WithEvents txtFechaNuevoServicio As TextBox
+    Friend WithEvents txtCostoMensualNuevoServicio As TextBox
+    Friend WithEvents cbxIdPersona As ComboBox
+    Friend WithEvents Label1 As Label
+    Friend WithEvents cbxIdServicio As ComboBox
+    Friend WithEvents TextBox1 As TextBox
 End Class
