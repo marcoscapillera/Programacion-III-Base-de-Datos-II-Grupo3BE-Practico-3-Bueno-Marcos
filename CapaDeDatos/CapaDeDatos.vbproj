@@ -64,9 +64,9 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ModeloConexion.vb" />
-    <Compile Include="ModeloPersona.vb" />
-    <Compile Include="ModeloServicios.vb" />
+    <Compile Include="MouloConexion.vb" />
+    <Compile Include="ModuloPersona.vb" />
+    <Compile Include="ModuloServicios.vb" />
     <Compile Include="ModuloContrata.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">

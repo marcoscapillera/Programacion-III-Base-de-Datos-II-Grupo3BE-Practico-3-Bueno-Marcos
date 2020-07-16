@@ -1,7 +1,7 @@
 ﻿Imports System.Data.Odbc
 
-Public Class ModeloServicios
-    Inherits ModeloConexion
+Public Class ModuloServicios
+    Inherits MouloConexion
 
     Public id As String
     Public nombre As String
@@ -12,7 +12,7 @@ Public Class ModeloServicios
 
 
     Public Sub GuardarServicio()
-        Dim c As New ModeloConexion
+        Dim c As New MouloConexion
         c.conectar()
         Try
             c.Comando.CommandText = "INSERT INTO servicio (id,nombre, costoMensual, tipo, fechaHoraCreacion, activo ) 
@@ -26,7 +26,7 @@ Public Class ModeloServicios
     End Sub
 
     Public Sub ModificarServicio()
-        Dim c As New ModeloConexion
+        Dim c As New MouloConexion
         c.conectar()
         Try
             c.Comando.CommandText = "UPDATE servicio SET nombre ='" & Me.nombre & "', costoMensual =" & Me.costo & ", tipo ='" & Me.tipo & "', fechaHoraCreacion ='" & Me.fechaHoraCreacion & "', activo =" & Me.activo & " WHERE id = " & Me.id & ""
@@ -39,7 +39,7 @@ Public Class ModeloServicios
     End Sub
 
     Public Sub EliminarServicio()
-        Dim c As New ModeloConexion
+        Dim c As New MouloConexion
         c.conectar()
         Try
             c.Comando.CommandText = "DELETE FROM servicio WHERE id = " & Me.id & ""
@@ -51,7 +51,7 @@ Public Class ModeloServicios
 
     End Sub
     Public Function listarServicios()
-        Dim c As New ModeloConexion
+        Dim c As New MouloConexion
         c.conectar()
         c.Comando.CommandText = "SELECT id, nombre, costoMensual, tipo, fechaHoraCreacion, activo   
         FROM practico3.servicio"

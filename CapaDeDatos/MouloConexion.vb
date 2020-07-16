@@ -1,6 +1,6 @@
 ﻿Imports System.Data.Odbc
 
-Public Class ModeloConexion
+Public Class MouloConexion
 
     Public DbDriver As String = "MySQL ODBC 5.3 ANSI Driver"
     Public DbUser As String = "marcos"

@@ -104,6 +104,12 @@
       <DependentUpon>FormPpal.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="ModificarContrata.Designer.vb">
+      <DependentUpon>ModificarContrata.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ModificarContrata.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="ModificarServicio.Designer.vb">
       <DependentUpon>ModificarServicio.vb</DependentUpon>
     </Compile>
@@ -153,6 +159,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormPpal.resx">
       <DependentUpon>FormPpal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModificarContrata.resx">
+      <DependentUpon>ModificarContrata.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ModificarServicio.resx">
       <DependentUpon>ModificarServicio.vb</DependentUpon>

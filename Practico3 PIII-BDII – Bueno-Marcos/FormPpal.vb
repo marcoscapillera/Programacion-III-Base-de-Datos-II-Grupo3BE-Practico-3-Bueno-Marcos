@@ -52,4 +52,8 @@ Public Class Gestor
         ContratarServicio.Show()
 
     End Sub
+
+    Private Sub ModificarToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles ModificarToolStripMenuItem1.Click
+        ModificarContrata.Show()
+    End Sub
 End Class

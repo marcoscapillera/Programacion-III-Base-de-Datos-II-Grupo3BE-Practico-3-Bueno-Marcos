@@ -1,7 +1,7 @@
 ﻿Imports System.Data.Odbc
 
-Public Class ModeloPersona
-    Inherits ModeloConexion
+Public Class ModuloPersona
+    Inherits MouloConexion
 
     Public id As String
     Public nombre As String
@@ -13,7 +13,7 @@ Public Class ModeloPersona
 
 
     Public Sub GuardarPersona()
-        Dim c As New ModeloConexion
+        Dim c As New MouloConexion
         Dim sqlText As String
 
         c.conectar()
@@ -50,7 +50,7 @@ Public Class ModeloPersona
     End Sub
 
     Public Sub ModificarPersona()
-        Dim c As New ModeloConexion
+        Dim c As New MouloConexion
         c.conectar()
         Try
 
@@ -83,7 +83,7 @@ Public Class ModeloPersona
     End Sub
 
     Public Sub EliminarPersona()
-        Dim c As New ModeloConexion
+        Dim c As New MouloConexion
         c.conectar()
         Try
 
@@ -112,7 +112,7 @@ Public Class ModeloPersona
     End Sub
 
     Public Function listarClientes()
-        Dim c As New ModeloConexion
+        Dim c As New MouloConexion
         c.conectar()
         c.Comando.CommandText = "SELECT persona.*, personatelefono.*
         FROM practico3.persona persona, practico3.personatelefono personatelefono
