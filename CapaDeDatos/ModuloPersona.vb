@@ -52,6 +52,7 @@ Public Class ModuloPersona
     Public Sub ModificarPersona()
         Dim c As New MouloConexion
         c.conectar()
+
         Try
 
             c.Comando.CommandText = "SET AUTOCOMMIT = OFF;"
@@ -60,17 +61,17 @@ Public Class ModuloPersona
             c.Comando.CommandText = "START TRANSACTION;"
             c.Comando.ExecuteNonQuery()
 
-            c.Comando.CommandText = "UPDATE  persona  SET nombre ='" & Me.nombre & "', apellido ='" & Me.apellido & "', mail='" & Me.mail & "', activo= " & Me.activo & "  WHERE id= " & Me.id
+            c.Comando.CommandText = "INSERT INTO persona (id,nombre, apellido, mail, activo ) 
+            VALUES ( " & Me.id & " ,'" & Me.nombre & "', '" & Me.apellido & "', '" & Me.mail & "', " & Me.activo & " ) ON DUPLICATE KEY UPDATE nombre='" & Me.nombre & "', apellido='" & Me.apellido & "', mail='" & Me.mail & "', activo=" & Me.activo
             c.Comando.ExecuteNonQuery()
 
-            c.Comando.CommandText = "insert into personatelefono (id, telefono) values  ( '" & Me.id & "', '" & Me.telefono1 & "' ) ON DUPLICATE KEY UPDATE telefono =" & Me.telefono1 & " "
-            'c.Comando.CommandText = "UPDATE personatelefono SET telefono =" & Me.telefono1 & " WHERE id = " & Me.id & " ON DUPLICATE KEY UPDATE telefono =" & Me.telefono1 & " "
+            c.Comando.CommandText = "DELETE FROM personatelefono WHERE id=" & Me.id & ""
             c.Comando.ExecuteNonQuery()
 
+            c.Comando.CommandText = "INSERT INTO personatelefono (id,telefono) VALUES (" & Me.id & " , " & Me.telefono1 & ")"
+            c.Comando.ExecuteNonQuery()
 
-            c.Comando.CommandText = "insert into personatelefono (id, telefono) values  ( '" & Me.id & "', '" & Me.telefono2 & "' ) ON DUPLICATE KEY UPDATE telefono =" & Me.telefono2 & " "
-
-            'c.Comando.CommandText = "UPDATE personatelefono SET telefono =" & Me.telefono2 & " WHERE id = " & Me.id & " ON DUPLICATE KEY UPDATE telefono =" & Me.telefono2 & " "
+            c.Comando.CommandText = "INSERT INTO personatelefono (id,telefono) VALUES (" & Me.id & " , " & Me.telefono2 & ")"
             c.Comando.ExecuteNonQuery()
 
             c.Comando.CommandText = "COMMIT;"
@@ -82,6 +83,7 @@ Public Class ModuloPersona
             c.Comando.ExecuteNonQuery()
 
         End Try
+
 
     End Sub
 

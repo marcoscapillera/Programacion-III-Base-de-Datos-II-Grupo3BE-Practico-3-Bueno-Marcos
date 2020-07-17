@@ -13,6 +13,8 @@ Public Class EliminarCliente
 
     Private Sub DataGridEliminarCliente_RowHeaderMouseClick(sender As Object, e As DataGridViewCellMouseEventArgs) Handles DataGridEliminarCliente.RowHeaderMouseClick
         txtIdEliminarCliente.Text = DataGridEliminarCliente.Item(0, e.RowIndex).Value
+
+
     End Sub
 
     Private Sub btnEliminar_Click(sender As Object, e As EventArgs) Handles btnEliminar.Click

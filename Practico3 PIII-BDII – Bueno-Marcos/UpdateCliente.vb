@@ -59,10 +59,10 @@ Public Class UpdateCliente
 
     Private Sub DataGridCliente_RowHeaderMouseClick(sender As Object, e As DataGridViewCellMouseEventArgs) Handles DataGridCliente.RowHeaderMouseClick
         txtIdModificarCliente.Text = DataGridCliente.Item(0, e.RowIndex).Value
-        'txtNombreModificarCliente.Text = DataGridCliente.Item(1, e.RowIndex).Value
-        'txtApellidoModificarCliente.Text = DataGridCliente.Item(2, e.RowIndex).Value
-        'txtMailModificarCliente.Text = DataGridCliente.Item(3, e.RowIndex).Value
-        'txtFechaModificarCliente.Text = DataGridCliente.Item(4, e.RowIndex).Value
+        txtNombreModificarCliente.Text = DataGridCliente.Item(1, e.RowIndex).Value
+        txtApellidoModificarCliente.Text = DataGridCliente.Item(2, e.RowIndex).Value
+        txtMailModificarCliente.Text = DataGridCliente.Item(3, e.RowIndex).Value
+        checkActivo.CheckState = DataGridCliente.Item(5, e.RowIndex).Value
 
     End Sub
 End Class
