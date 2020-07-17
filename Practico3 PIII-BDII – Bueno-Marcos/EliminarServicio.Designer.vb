@@ -96,7 +96,7 @@ Partial Class EliminarServicio
         Me.btnEliminarServicios.Name = "btnEliminarServicios"
         Me.btnEliminarServicios.Size = New System.Drawing.Size(135, 34)
         Me.btnEliminarServicios.TabIndex = 94
-        Me.btnEliminarServicios.Text = "Eliminar"
+        Me.btnEliminarServicios.Text = "Baja"
         Me.btnEliminarServicios.UseVisualStyleBackColor = False
         '
         'txtIdEliminarServicio

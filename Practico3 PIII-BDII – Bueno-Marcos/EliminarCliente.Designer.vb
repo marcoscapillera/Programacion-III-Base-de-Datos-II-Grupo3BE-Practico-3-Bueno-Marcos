@@ -98,7 +98,7 @@ Partial Class EliminarCliente
         Me.btnEliminar.Name = "btnEliminar"
         Me.btnEliminar.Size = New System.Drawing.Size(135, 34)
         Me.btnEliminar.TabIndex = 75
-        Me.btnEliminar.Text = "Eliminar"
+        Me.btnEliminar.Text = "Baja"
         Me.btnEliminar.UseVisualStyleBackColor = False
         '
         'txtIdEliminarCliente
