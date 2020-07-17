@@ -3,6 +3,7 @@
 Instrucciones
 
 Agregar Cliente para ingresar datos, hay que seleccionar boton Habilitar
+
 Agregar Cliente, se solicita dos telefonos, hay que ingresar los dos, no esta validado que ingrese solo uno
 
 Modificar Cliene, para ingresar datos, hay que seleccionar boton Habilitar, y puego Listar los clientes, 
