@@ -1,7 +1,7 @@
 ﻿Imports System.Data.Odbc
 
-Public Class ModuloContrata
-    Inherits MouloConexion
+Public Class ModeloContrata
+    Inherits ModeloConexion
 
     Public idPersona As String
     Public idServicio As String
@@ -13,7 +13,7 @@ Public Class ModuloContrata
     Public fechaC1 As String
 
     Public Sub GuardarContrata()
-        Dim c As New MouloConexion
+        Dim c As New ModeloConexion
         c.conectar()
         Try
             c.Comando.CommandText = "INSERT INTO contrata (idPersona, idServicio, fechaCreacion, fechaContratacion, fechaFinContrato ) 
@@ -26,7 +26,7 @@ Public Class ModuloContrata
     End Sub
 
     Public Sub ModificaContrata()
-        Dim c As New MouloConexion
+        Dim c As New ModeloConexion
         c.conectar()
         Try
             c.Comando.CommandText = "UPDATE practico3.contrata SET idPersona=" & Me.idPersona & ", idServicio=" & Me.idServicio & ", fechaCreacion='" & Me.fechaContrata & "', fechaContratacion='" & Me.fechaContrato & "', fechaFinContrato='" & Me.fechaFinContrato & "'  WHERE idPersona = " & Me.idP & " And idServicio = " & Me.idS & " And fechaCreacion ='" & Me.fechaC1 & "'"
@@ -40,7 +40,7 @@ Public Class ModuloContrata
     End Sub
 
     Public Function ListarId()
-        Dim c As New MouloConexion
+        Dim c As New ModeloConexion
         c.conectar()
         c.Comando.CommandText = "SELECT id FROM persona"
         Reader = c.Comando.ExecuteReader()
@@ -48,7 +48,7 @@ Public Class ModuloContrata
     End Function
 
     Public Function ListarIdServicio()
-        Dim c As New MouloConexion
+        Dim c As New ModeloConexion
         c.conectar()
         c.Comando.CommandText = "SELECT id FROM servicio"
         Reader = c.Comando.ExecuteReader()
@@ -57,7 +57,7 @@ Public Class ModuloContrata
 
     Public Function ListaTablaContrata()
 
-        Dim c As New MouloConexion
+        Dim c As New ModeloConexion
         c.conectar()
         c.Comando.CommandText = "SELECT idPersona, idServicio, DATE_FORMAT(fechaCreacion, '%Y-%m-%d'), DATE_FORMAT(fechaContratacion, '%Y-%m-%d'), DATE_FORMAT(fechaFinContrato, '%Y-%m-%d')
             FROM contrata;"

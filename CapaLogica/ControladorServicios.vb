@@ -4,7 +4,7 @@ Public Module ControladorServicios
 
     Public Sub GuardarServicios(Id As String, nombre As String, costo As String, tipo As String, fechaHoraCreacion As String, activo As Boolean)
         'Guarda los datos de Servicio
-        Dim s As New ModuloServicios
+        Dim s As New ModeloServicios
         s.id = Id
         s.nombre = nombre
         s.costo = costo
@@ -15,8 +15,8 @@ Public Module ControladorServicios
     End Sub
 
     Public Sub ModificarServicios(Id As String, nombre As String, costo As String, tipo As String, activo As Boolean)
-        'Guarda los datos de Servicio
-        Dim s As New ModuloServicios
+        'Modifica los datos de Servicio
+        Dim s As New ModeloServicios
         s.id = Id
         s.nombre = nombre
         s.costo = costo
@@ -26,13 +26,13 @@ Public Module ControladorServicios
     End Sub
 
     Public Sub EliminarServicios(Id As String)
-        'Guarda los datos de Servicio
-        Dim s As New ModuloServicios
+        'Baja los datos de Servicio
+        Dim s As New ModeloServicios
         s.id = Id
         s.EliminarServicio()
     End Sub
     Public Function ListarServicios()
-        Dim s As New ModuloServicios
+        Dim s As New ModeloServicios
         Return s.listarServicios()
     End Function
 End Module

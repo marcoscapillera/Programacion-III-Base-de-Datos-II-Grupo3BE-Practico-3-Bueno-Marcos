@@ -1,7 +1,7 @@
 ﻿Imports System.Data.Odbc
 
-Public Class ModuloServicios
-    Inherits MouloConexion
+Public Class ModeloServicios
+    Inherits ModeloConexion
 
     Public id As String
     Public nombre As String
@@ -12,7 +12,7 @@ Public Class ModuloServicios
 
 
     Public Sub GuardarServicio()
-        Dim c As New MouloConexion
+        Dim c As New ModeloConexion
         c.conectar()
         Try
             c.Comando.CommandText = "INSERT INTO servicio (id,nombre, costoMensual, tipo, fechaHoraCreacion, activo ) 
@@ -26,13 +26,10 @@ Public Class ModuloServicios
     End Sub
 
     Public Sub ModificarServicio()
-        Dim c As New MouloConexion
+        Dim c As New ModeloConexion
         c.conectar()
         Try
-            c.Comando.CommandText = "UPDATE servicio SET nombre ='" & Me.nombre & "', costoMensual =" & Me.costo & ", tipo ='" & Me.tipo & "', fechaHoraCreacion ='" & Me.fechaHoraCreacion & "', activo =" & Me.activo & " WHERE id = " & Me.id & ""
-
-
-
+            c.Comando.CommandText = "UPDATE servicio SET nombre ='" & Me.nombre & "', costoMensual =" & Me.costo & ", tipo ='" & Me.tipo & "', activo =" & Me.activo & " WHERE id = " & Me.id
             c.Comando.ExecuteNonQuery()
 
         Catch ex As Exception
@@ -42,7 +39,7 @@ Public Class ModuloServicios
     End Sub
 
     Public Sub EliminarServicio()
-        Dim c As New MouloConexion
+        Dim c As New ModeloConexion
         c.conectar()
         Try
             c.Comando.CommandText = "UPDATE servicio SET  activo=0 WHERE id = " & Me.id
@@ -54,7 +51,7 @@ Public Class ModuloServicios
 
     End Sub
     Public Function listarServicios()
-        Dim c As New MouloConexion
+        Dim c As New ModeloConexion
         c.conectar()
         c.Comando.CommandText = "SELECT id, nombre, costoMensual, tipo, fechaHoraCreacion, activo   
         FROM practico3.servicio"
