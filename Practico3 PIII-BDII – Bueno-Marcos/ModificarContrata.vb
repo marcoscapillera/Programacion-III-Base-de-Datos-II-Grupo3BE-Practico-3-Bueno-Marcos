@@ -4,17 +4,6 @@ Public Class ModificarContrata
     Dim PkServicios As String
     Dim PkFechaCreacion As String
 
-
-    Private Sub DataGridContrata_RowHeaderMouseClick(sender As Object, e As DataGridViewCellMouseEventArgs) Handles DataGridContrata.RowHeaderMouseClick
-        PkPersona = DataGridContrata.Item(0, e.RowIndex).Value
-        PkServicios = DataGridContrata.Item(1, e.RowIndex).Value
-        PkFechaCreacion = DataGridContrata.Item(2, e.RowIndex).Value
-        cbxIdPersona.Text = DataGridContrata.Item(0, e.RowIndex).Value
-        cbxIdServicio.Text = DataGridContrata.Item(1, e.RowIndex).Value
-        txtFechaCreacion.Text = DataGridContrata.Item(2, e.RowIndex).Value
-        txtFechaContrato.Text = DataGridContrata.Item(3, e.RowIndex).Value
-        txtFechaFinContrato.Text = DataGridContrata.Item(4, e.RowIndex).Value
-    End Sub
     Private Sub btnModificar_Click(sender As Object, e As EventArgs) Handles btnModificar.Click
         If habilitaModificar() = True Then
             Try
@@ -35,6 +24,16 @@ Public Class ModificarContrata
             MsgBox("Campos Vacios")
         End If
     End Sub
+    Private Sub DataGridContrata_RowHeaderMouseClick(sender As Object, e As DataGridViewCellMouseEventArgs) Handles DataGridContrata.RowHeaderMouseClick
+        PkPersona = DataGridContrata.Item(0, e.RowIndex).Value
+        PkServicios = DataGridContrata.Item(1, e.RowIndex).Value
+        PkFechaCreacion = DataGridContrata.Item(2, e.RowIndex).Value
+        cbxIdPersona.Text = DataGridContrata.Item(0, e.RowIndex).Value
+        cbxIdServicio.Text = DataGridContrata.Item(1, e.RowIndex).Value
+        txtFechaCreacion.Text = DataGridContrata.Item(2, e.RowIndex).Value
+        txtFechaContrato.Text = DataGridContrata.Item(3, e.RowIndex).Value
+        txtFechaFinContrato.Text = DataGridContrata.Item(4, e.RowIndex).Value
+    End Sub
 
 
     Private Sub btnLimpiar_Click(sender As Object, e As EventArgs) Handles btnLimpiar.Click
@@ -45,7 +44,6 @@ Public Class ModificarContrata
         Try
             Dim tabla As New DataTable
             tabla.Load(ControladorContrata.ListarContrata())
-
             DataGridContrata.DataSource = tabla
             DataGridContrata.Columns(0).HeaderText = "Id Persona"
             DataGridContrata.Columns(1).HeaderText = "Id Servicio"
@@ -73,9 +71,6 @@ Public Class ModificarContrata
         End If
     End Function
 
-    Private Sub btnEnable_Click(sender As Object, e As EventArgs)
-
-    End Sub
 
     Private Sub btnActualizar_Click(sender As Object, e As EventArgs) Handles btnActualizar.Click
         cargarComboIdPersona()

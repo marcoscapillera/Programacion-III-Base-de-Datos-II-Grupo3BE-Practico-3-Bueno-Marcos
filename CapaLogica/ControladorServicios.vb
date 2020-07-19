@@ -26,7 +26,7 @@ Public Module ControladorServicios
     End Sub
 
     Public Sub EliminarServicios(Id As String)
-        'Baja los datos de Servicio
+        'Da de Baja a Servicio de forma logica
         Dim s As New ModeloServicios
         s.id = Id
         s.EliminarServicio()

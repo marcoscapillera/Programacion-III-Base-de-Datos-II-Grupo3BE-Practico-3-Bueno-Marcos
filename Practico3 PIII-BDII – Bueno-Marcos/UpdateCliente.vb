@@ -5,7 +5,6 @@ Public Class UpdateCliente
             limpiarCajas()
         End If
     End Sub
-
     Private Sub btnGuardar_Click(sender As Object, e As EventArgs) Handles btnModificar.Click
         If habilitaModificar() = True Then
             Try
@@ -24,8 +23,11 @@ Public Class UpdateCliente
 
 
     Public Function habilitaModificar() As Boolean
-        If txtIdModificarCliente.Text <> "" And txtNombreModificarCliente.Text <> "" And txtApellidoModificarCliente.Text <> "" And
-           txtMailModificarCliente.Text <> "" And txtTelefono1ModificarCliente.Text <> "" And
+        If txtIdModificarCliente.Text <> "" And
+           txtNombreModificarCliente.Text <> "" And
+           txtApellidoModificarCliente.Text <> "" And
+           txtMailModificarCliente.Text <> "" And
+           txtTelefono1ModificarCliente.Text <> "" And
            txtTelefono2ModificarCliente.Text <> "" Then
             Return True
         Else
@@ -52,10 +54,6 @@ Public Class UpdateCliente
         End Try
     End Sub
 
-
-    Private Sub DataGridCliente_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridCliente.CellContentClick
-
-    End Sub
 
     Private Sub DataGridCliente_RowHeaderMouseClick(sender As Object, e As DataGridViewCellMouseEventArgs) Handles DataGridCliente.RowHeaderMouseClick
         txtIdModificarCliente.Text = DataGridCliente.Item(0, e.RowIndex).Value

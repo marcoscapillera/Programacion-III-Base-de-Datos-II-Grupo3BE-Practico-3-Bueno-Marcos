@@ -1,14 +1,6 @@
 ﻿Imports CapaLogica
 Public Class EliminarServicio
-    Private Sub btnListarClientes_Click(sender As Object, e As EventArgs) Handles btnListarServicios.Click
-        Try
-            Dim tabla As New DataTable
-            tabla.Load(ControladorServicios.ListarServicios())
-            DataGridEliminarServicio.DataSource = tabla
-        Catch ex As Exception
-            MsgBox("Hubo un error")
-        End Try
-    End Sub
+
 
     Private Sub btnEliminarServicios_Click(sender As Object, e As EventArgs) Handles btnEliminarServicios.Click
         If txtIdEliminarServicio.Text <> "" Then
@@ -22,6 +14,16 @@ Public Class EliminarServicio
         Else
             MsgBox("Campos Vacios")
         End If
+    End Sub
+
+    Private Sub btnListarClientes_Click(sender As Object, e As EventArgs) Handles btnListarServicios.Click
+        Try
+            Dim tabla As New DataTable
+            tabla.Load(ControladorServicios.ListarServicios())
+            DataGridEliminarServicio.DataSource = tabla
+        Catch ex As Exception
+            MsgBox("Hubo un error")
+        End Try
     End Sub
 
     Private Sub DataGridEliminarServicio_RowHeaderMouseClick(sender As Object, e As DataGridViewCellMouseEventArgs) Handles DataGridEliminarServicio.RowHeaderMouseClick

@@ -10,7 +10,6 @@ Public Class ModeloServicios
     Public fechaHoraCreacion As String
     Public activo As Boolean
 
-
     Public Sub GuardarServicio()
         Dim c As New ModeloConexion
         c.conectar()
@@ -18,9 +17,7 @@ Public Class ModeloServicios
             c.Comando.CommandText = "INSERT INTO servicio (id,nombre, costoMensual, tipo, fechaHoraCreacion, activo ) 
             VALUES ( " & Me.id & " ,'" & Me.nombre & "', " & Me.costo & ", '" & Me.tipo & "', '" & Me.fechaHoraCreacion & "', " & Me.activo & " )"
             c.Comando.ExecuteNonQuery()
-
         Catch ex As Exception
-
         End Try
 
     End Sub

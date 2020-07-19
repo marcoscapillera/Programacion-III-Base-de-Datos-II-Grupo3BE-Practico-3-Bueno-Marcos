@@ -29,7 +29,7 @@ Public Module ControladorPersonas
     End Sub
 
     Public Sub EliminarPersona(Id As String)
-        'Guarda los datos de Persona 
+        'Da de baja los datos de Persona 
         Dim p As New ModeloPersona
         p.id = Id
         p.EliminarPersona()

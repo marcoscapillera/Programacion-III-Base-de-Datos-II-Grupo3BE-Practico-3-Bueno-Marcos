@@ -6,7 +6,6 @@ Public Class ContratarServicio
             Try
                 ControladorContrata.GuardaContrata(cbxIdPersona.Text, cbxIdServicio.Text, txtFechaCreacion.Text, FechaContrato.Text,
                                                        txtFechaFinContrato.Text)
-
                 MsgBox("Servicio Contratado ingresado correctamente")
                 limpiarCajas()
             Catch ex As Exception

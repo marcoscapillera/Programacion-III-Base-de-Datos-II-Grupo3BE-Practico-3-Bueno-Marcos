@@ -31,9 +31,7 @@ Public Class ModeloContrata
         Try
             c.Comando.CommandText = "UPDATE practico3.contrata SET idPersona=" & Me.idPersona & ", idServicio=" & Me.idServicio & ", fechaCreacion='" & Me.fechaContrata & "', fechaContratacion='" & Me.fechaContrato & "', fechaFinContrato='" & Me.fechaFinContrato & "'  WHERE idPersona = " & Me.idP & " And idServicio = " & Me.idS & " And fechaCreacion ='" & Me.fechaC1 & "'"
             MsgBox(c.Comando.CommandText)
-
             c.Comando.ExecuteNonQuery()
-
         Catch ex As Exception
             MsgBox(ex.Message)
         End Try
@@ -56,7 +54,6 @@ Public Class ModeloContrata
     End Function
 
     Public Function ListaTablaContrata()
-
         Dim c As New ModeloConexion
         c.conectar()
         c.Comando.CommandText = "SELECT idPersona, idServicio, DATE_FORMAT(fechaCreacion, '%Y-%m-%d'), DATE_FORMAT(fechaContratacion, '%Y-%m-%d'), DATE_FORMAT(fechaFinContrato, '%Y-%m-%d')

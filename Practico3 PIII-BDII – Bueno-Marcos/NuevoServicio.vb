@@ -1,9 +1,6 @@
 ﻿Imports CapaLogica
 
 Public Class NuevoServicio
-    Private Sub lblAgregarUsuario_Click(sender As Object, e As EventArgs) Handles lblAgregarUsuario.Click
-
-    End Sub
 
     Private Sub btnGuardar_Click(sender As Object, e As EventArgs) Handles btnGuardar.Click
         If habilitaGuardar() = True Then
@@ -21,11 +18,12 @@ Public Class NuevoServicio
         End If
     End Sub
 
-
-
     Public Function habilitaGuardar() As Boolean
-        If txtIdNuevoServicio.Text <> "" And txtNombreNuevoServicio.Text <> "" And txtCostoMensualNuevoServicio.Text <> "" And
-           cmbTipos.Text <> "" And txtFechaNuevoServicio.Text <> "" Then
+        If txtIdNuevoServicio.Text <> "" And
+           txtNombreNuevoServicio.Text <> "" And
+           txtCostoMensualNuevoServicio.Text <> "" And
+           cmbTipos.Text <> "" And
+           txtFechaNuevoServicio.Text <> "" Then
             Return True
         Else
             Return False

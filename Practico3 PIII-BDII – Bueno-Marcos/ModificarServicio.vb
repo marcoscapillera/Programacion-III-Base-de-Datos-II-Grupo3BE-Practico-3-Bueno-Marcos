@@ -1,5 +1,20 @@
 ﻿Imports CapaLogica
 Public Class ModificarServicio
+
+    Private Sub btnModificar_Click(sender As Object, e As EventArgs) Handles btnModificar.Click
+        Try
+            ControladorServicios.ModificarServicios(txtIdModificarServicio.Text,
+                                                    txtNombreModificarServicio.Text,
+                                                    txtCostoMensualModificarServicio.Text,
+                                                    cmbTiposModificarServicio.Text,
+                                                    checkActivo.CheckState)
+            MsgBox("Datos de servicios actualizado correctamente")
+            limpiarCajas()
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        End Try
+
+    End Sub
     Private Sub btnListarClientes_Click(sender As Object, e As EventArgs) Handles btnListarServicios.Click
         Try
             Dim tabla As New DataTable
@@ -20,22 +35,6 @@ Public Class ModificarServicio
 
     Private Sub btnEnable_Click(sender As Object, e As EventArgs) Handles btnEnable.Click
         limpiarCajas()
-    End Sub
-
-    Private Sub btnModificar_Click(sender As Object, e As EventArgs) Handles btnModificar.Click
-
-        Try
-            ControladorServicios.ModificarServicios(txtIdModificarServicio.Text,
-                                                    txtNombreModificarServicio.Text,
-                                                    txtCostoMensualModificarServicio.Text,
-                                                    cmbTiposModificarServicio.Text,
-                                                    checkActivo.CheckState)
-            MsgBox("Datos de servicios actualizado correctamente")
-            limpiarCajas()
-        Catch ex As Exception
-            MsgBox(ex.Message)
-        End Try
-
     End Sub
 
     Public Sub limpiarCajas()

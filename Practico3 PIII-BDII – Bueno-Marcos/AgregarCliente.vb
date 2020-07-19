@@ -1,8 +1,6 @@
 ﻿Imports CapaLogica
 Public Class AgregarCliente
 
-
-
     Private Sub Guardar_Click(sender As Object, e As EventArgs) Handles btnGuardar.Click
         If habilitaGuardar() = True Then
             Try
@@ -35,7 +33,6 @@ Public Class AgregarCliente
         txtNombreAgregarCliente.Text = ""
         txtApellidoAgregarCliente.Text = ""
         txtMailAgregarCliente.Text = ""
-        'txtFechaAgregarCliente.Text = ""
         checkActivo.CheckState = CheckState.Checked
         txtTelefono1AgregarCliente.Text = ""
         txtTelefono2AgregarCliente.Text = ""
